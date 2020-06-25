@@ -1,0 +1,6 @@
+P:\temp\NikonBat\NikonBat\bin\Debug\NikonBat.exe.config
+P:\temp\NikonBat\NikonBat\bin\Debug\NikonBat.exe
+P:\temp\NikonBat\NikonBat\bin\Debug\NikonBat.pdb
+P:\temp\NikonBat\NikonBat\obj\Debug\NikonBat.csproj.CoreCompileInputs.cache
+P:\temp\NikonBat\NikonBat\obj\Debug\NikonBat.exe
+P:\temp\NikonBat\NikonBat\obj\Debug\NikonBat.pdb

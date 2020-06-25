@@ -1,0 +1,19 @@
+﻿https://www.cnblogs.com/mq0036/p/3678148.html
+https://www.cnblogs.com/worfdream/articles/2938658.html
+连接数据库
+
+ https://blog.csdn.net/qq_21747999/article/details/79151910
+ https://www.cnblogs.com/zhaoshujie/p/10612654.html
+ 运行DOS命令
+
+ https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream?view=netframework-3.5
+ 压缩解压缩文件
+
+ https://blog.csdn.net/zzhangchl/article/details/78863992
+ ftp下载
+
+ https://blog.csdn.net/kevinfan2011/article/details/83959039
+C#实战009:Excel操作-删除指定的Excel工作表
+
+https://www.cnblogs.com/wwwbdabc/p/10333331.html
+SQLITE操作
