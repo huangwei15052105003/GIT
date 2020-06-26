@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hELPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,6 +134,9 @@
             this.矢量图ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.步骤一索引ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.步骤二双击列表项作图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.单个AWE文件分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.步骤二WaferQualitySummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nIKONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看预对位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看对位方式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -307,7 +310,7 @@
             this.释放 = new System.Windows.Forms.Button();
             this.DisplayHideChart = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.导入单个AWE作图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.步骤二25thOrderResidualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Query.SuspendLayout();
@@ -344,7 +347,7 @@
             this.r2RToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1011, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1011, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -361,27 +364,27 @@
             this.选择目录备份ToolStripMenuItem,
             this.运行待完成ToolStripMenuItem});
             this.hELPToolStripMenuItem.Name = "hELPToolStripMenuItem";
-            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(49, 21);
             this.hELPToolStripMenuItem.Text = "HELP";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(220, 22);
             this.toolStripMenuItem2.Text = "主要变更说明";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // 数据保存位置说明ToolStripMenuItem
             // 
             this.数据保存位置说明ToolStripMenuItem.Name = "数据保存位置说明ToolStripMenuItem";
-            this.数据保存位置说明ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.数据保存位置说明ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.数据保存位置说明ToolStripMenuItem.Text = "数据保存位置说明";
             this.数据保存位置说明ToolStripMenuItem.Click += new System.EventHandler(this.数据保存位置说明ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(214, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(220, 22);
             this.toolStripMenuItem8.Text = "手动选择文件复制";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
@@ -399,90 +402,90 @@
             this.复制R2RCDOVLCDCONFIGToolStripMenuItem,
             this.复制ChartRawDataToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(214, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
             this.toolStripMenuItem1.Text = "自动复制单个数据文件";
             // 
             // 复制ReworkMoveToolStripMenuItem
             // 
             this.复制ReworkMoveToolStripMenuItem.Name = "复制ReworkMoveToolStripMenuItem";
-            this.复制ReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制ReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制ReworkMoveToolStripMenuItem.Text = "复制ReworkMove";
             this.复制ReworkMoveToolStripMenuItem.Click += new System.EventHandler(this.复制ReworkMoveToolStripMenuItem_Click);
             // 
             // 复制AsmAweToolStripMenuItem
             // 
             this.复制AsmAweToolStripMenuItem.Name = "复制AsmAweToolStripMenuItem";
-            this.复制AsmAweToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制AsmAweToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制AsmAweToolStripMenuItem.Text = "复制AsmAwe";
             this.复制AsmAweToolStripMenuItem.Click += new System.EventHandler(this.复制AsmAweToolStripMenuItem_Click);
             // 
             // 复制AsmlBatchReportToolStripMenuItem
             // 
             this.复制AsmlBatchReportToolStripMenuItem.Name = "复制AsmlBatchReportToolStripMenuItem";
-            this.复制AsmlBatchReportToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制AsmlBatchReportToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制AsmlBatchReportToolStripMenuItem.Text = "复制AsmlBatchReport";
             this.复制AsmlBatchReportToolStripMenuItem.Click += new System.EventHandler(this.复制AsmlBatchReportToolStripMenuItem_Click);
             // 
             // 复制AsmlJobinStationToolStripMenuItem
             // 
             this.复制AsmlJobinStationToolStripMenuItem.Name = "复制AsmlJobinStationToolStripMenuItem";
-            this.复制AsmlJobinStationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制AsmlJobinStationToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制AsmlJobinStationToolStripMenuItem.Text = "复制AsmlJobinStation";
             this.复制AsmlJobinStationToolStripMenuItem.Click += new System.EventHandler(this.复制AsmlJobinStationToolStripMenuItem_Click);
             // 
             // 复制cDRecipeToolStripMenuItem
             // 
             this.复制cDRecipeToolStripMenuItem.Name = "复制cDRecipeToolStripMenuItem";
-            this.复制cDRecipeToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制cDRecipeToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制cDRecipeToolStripMenuItem.Text = "复制cDRecipe";
             this.复制cDRecipeToolStripMenuItem.Click += new System.EventHandler(this.复制cDRecipeToolStripMenuItem_Click);
             // 
             // 复制FlowToolStripMenuItem
             // 
             this.复制FlowToolStripMenuItem.Name = "复制FlowToolStripMenuItem";
-            this.复制FlowToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制FlowToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制FlowToolStripMenuItem.Text = "复制Flow";
             this.复制FlowToolStripMenuItem.Click += new System.EventHandler(this.复制FlowToolStripMenuItem_Click);
             // 
             // 复制NikonEgaParaToolStripMenuItem
             // 
             this.复制NikonEgaParaToolStripMenuItem.Name = "复制NikonEgaParaToolStripMenuItem";
-            this.复制NikonEgaParaToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制NikonEgaParaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制NikonEgaParaToolStripMenuItem.Text = "复制NikonEgaPara";
             this.复制NikonEgaParaToolStripMenuItem.Click += new System.EventHandler(this.复制NikonEgaParaToolStripMenuItem_Click);
             // 
             // 复制NikonJobinStationToolStripMenuItem
             // 
             this.复制NikonJobinStationToolStripMenuItem.Name = "复制NikonJobinStationToolStripMenuItem";
-            this.复制NikonJobinStationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制NikonJobinStationToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制NikonJobinStationToolStripMenuItem.Text = "复制NikonJobinStation";
             this.复制NikonJobinStationToolStripMenuItem.Click += new System.EventHandler(this.复制NikonJobinStationToolStripMenuItem_Click);
             // 
             // 复制R2RCDOVLCDCONFIGToolStripMenuItem
             // 
             this.复制R2RCDOVLCDCONFIGToolStripMenuItem.Name = "复制R2RCDOVLCDCONFIGToolStripMenuItem";
-            this.复制R2RCDOVLCDCONFIGToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制R2RCDOVLCDCONFIGToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制R2RCDOVLCDCONFIGToolStripMenuItem.Text = "复制R2R(CD,OVL,CDCONFIG)";
             this.复制R2RCDOVLCDCONFIGToolStripMenuItem.Click += new System.EventHandler(this.复制R2RCDOVLCDCONFIGToolStripMenuItem_Click);
             // 
             // 复制ChartRawDataToolStripMenuItem
             // 
             this.复制ChartRawDataToolStripMenuItem.Name = "复制ChartRawDataToolStripMenuItem";
-            this.复制ChartRawDataToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制ChartRawDataToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.复制ChartRawDataToolStripMenuItem.Text = "复制ChartRawData";
             this.复制ChartRawDataToolStripMenuItem.Click += new System.EventHandler(this.复制ChartRawDataToolStripMenuItem_Click);
             // 
             // 自动复制数据ToolStripMenuItem
             // 
             this.自动复制数据ToolStripMenuItem.Name = "自动复制数据ToolStripMenuItem";
-            this.自动复制数据ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.自动复制数据ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.自动复制数据ToolStripMenuItem.Text = "自动复制所有数据（极慢）";
             this.自动复制数据ToolStripMenuItem.Click += new System.EventHandler(this.自动复制数据ToolStripMenuItem_Click);
             // 
             // 获取表名ToolStripMenuItem
             // 
             this.获取表名ToolStripMenuItem.Name = "获取表名ToolStripMenuItem";
-            this.获取表名ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.获取表名ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.获取表名ToolStripMenuItem.Text = "获取表名和字段信息";
             this.获取表名ToolStripMenuItem.Click += new System.EventHandler(this.获取表名ToolStripMenuItem_Click);
             // 
@@ -490,21 +493,21 @@
             // 
             this.复制LithoFormExposureRecipeFormToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.复制LithoFormExposureRecipeFormToolStripMenuItem.Name = "复制LithoFormExposureRecipeFormToolStripMenuItem";
-            this.复制LithoFormExposureRecipeFormToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.复制LithoFormExposureRecipeFormToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.复制LithoFormExposureRecipeFormToolStripMenuItem.Text = "复制DEBUG/EXE";
             this.复制LithoFormExposureRecipeFormToolStripMenuItem.Click += new System.EventHandler(this.复制LithoFormExposureRecipeFormToolStripMenuItem_Click);
             // 
             // 选择目录备份ToolStripMenuItem
             // 
             this.选择目录备份ToolStripMenuItem.Name = "选择目录备份ToolStripMenuItem";
-            this.选择目录备份ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.选择目录备份ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.选择目录备份ToolStripMenuItem.Text = "选择目录备份";
             this.选择目录备份ToolStripMenuItem.Click += new System.EventHandler(this.选择目录备份ToolStripMenuItem_Click);
             // 
             // 运行待完成ToolStripMenuItem
             // 
             this.运行待完成ToolStripMenuItem.Name = "运行待完成ToolStripMenuItem";
-            this.运行待完成ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.运行待完成ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.运行待完成ToolStripMenuItem.Text = "10.4.72.150运行";
             this.运行待完成ToolStripMenuItem.Click += new System.EventHandler(this.运行待完成ToolStripMenuItem_Click_1);
             // 
@@ -522,7 +525,7 @@
             this.houseKeepingAsmlAweToolStripMenuItem,
             this.fullAsmlAweLongTimeToolStripMenuItem});
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(65, 20);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(70, 21);
             this.toolStripMenuItem9.Text = "Maintain";
             // 
             // toolStripMenuItem14
@@ -538,41 +541,41 @@
             this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem,
             this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem});
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(244, 22);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(250, 22);
             this.toolStripMenuItem14.Text = "UpdateDB";
             // 
             // reworkToolStripMenuItem
             // 
             this.reworkToolStripMenuItem.Name = "reworkToolStripMenuItem";
-            this.reworkToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.reworkToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.reworkToolStripMenuItem.Text = "Rework(ReworkMove)";
             this.reworkToolStripMenuItem.Click += new System.EventHandler(this.reworkToolStripMenuItem_Click);
             // 
             // chartingToolStripMenuItem
             // 
             this.chartingToolStripMenuItem.Name = "chartingToolStripMenuItem";
-            this.chartingToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.chartingToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.chartingToolStripMenuItem.Text = "Charting(ChartRawData)";
             this.chartingToolStripMenuItem.Click += new System.EventHandler(this.chartingToolStripMenuItem_Click);
             // 
             // trackRecipeEsfRewokMoveToolStripMenuItem
             // 
             this.trackRecipeEsfRewokMoveToolStripMenuItem.Name = "trackRecipeEsfRewokMoveToolStripMenuItem";
-            this.trackRecipeEsfRewokMoveToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.trackRecipeEsfRewokMoveToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.trackRecipeEsfRewokMoveToolStripMenuItem.Text = "TrackRecipeEsfWip(RewokMove)";
             this.trackRecipeEsfRewokMoveToolStripMenuItem.Click += new System.EventHandler(this.trackRecipeEsfRewokMoveToolStripMenuItem_Click);
             // 
             // techCodeReworkMoveToolStripMenuItem
             // 
             this.techCodeReworkMoveToolStripMenuItem.Name = "techCodeReworkMoveToolStripMenuItem";
-            this.techCodeReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.techCodeReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.techCodeReworkMoveToolStripMenuItem.Text = "TechCode(ReworkMove)";
             this.techCodeReworkMoveToolStripMenuItem.Click += new System.EventHandler(this.techCodeReworkMoveToolStripMenuItem_Click);
             // 
             // partVsMaskReworkMoveToolStripMenuItem
             // 
             this.partVsMaskReworkMoveToolStripMenuItem.Name = "partVsMaskReworkMoveToolStripMenuItem";
-            this.partVsMaskReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.partVsMaskReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.partVsMaskReworkMoveToolStripMenuItem.Text = "PartVsMask(ReworkMove)";
             this.partVsMaskReworkMoveToolStripMenuItem.Click += new System.EventHandler(this.partVsMaskReworkMoveToolStripMenuItem_Click);
             // 
@@ -586,132 +589,132 @@
             this.pSQLiteOPASOVLcsvToolStripMenuItem,
             this.jobinStationLongTimeToolStripMenuItem});
             this.dataSourceCSVFileToolStripMenuItem.Name = "dataSourceCSVFileToolStripMenuItem";
-            this.dataSourceCSVFileToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.dataSourceCSVFileToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.dataSourceCSVFileToolStripMenuItem.Text = "DataSource:CSV File";
             // 
             // maskInfoToolStripMenuItem
             // 
             this.maskInfoToolStripMenuItem.Name = "maskInfoToolStripMenuItem";
-            this.maskInfoToolStripMenuItem.Size = new System.Drawing.Size(346, 22);
+            this.maskInfoToolStripMenuItem.Size = new System.Drawing.Size(367, 22);
             this.maskInfoToolStripMenuItem.Text = "P:\\\\_SQLite\\\\OPAS\\\\MaskInfo.csv(ReworkMove)";
             this.maskInfoToolStripMenuItem.Click += new System.EventHandler(this.maskInfoToolStripMenuItem_Click);
             // 
             // pSQLiteOPASr2rCdConfigcsvToolStripMenuItem
             // 
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem.Name = "pSQLiteOPASr2rCdConfigcsvToolStripMenuItem";
-            this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem.Size = new System.Drawing.Size(346, 22);
+            this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem.Size = new System.Drawing.Size(367, 22);
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem.Text = "P:\\\\_SQLite\\\\OPAS\\\\r2rCdConfig.csv(R2R)";
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem.Click += new System.EventHandler(this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem_Click);
             // 
             // pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1
             // 
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1.Name = "pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1";
-            this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1.Size = new System.Drawing.Size(346, 22);
+            this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1.Size = new System.Drawing.Size(367, 22);
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1.Text = "P:\\\\_SQLite\\\\OPAS\\\\r2rCdConfig.csv(ReworkMove)";
             this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1.Click += new System.EventHandler(this.pSQLiteOPASr2rCdConfigcsvToolStripMenuItem1_Click);
             // 
             // pSQLiteOPASCDcsvToolStripMenuItem
             // 
             this.pSQLiteOPASCDcsvToolStripMenuItem.Name = "pSQLiteOPASCDcsvToolStripMenuItem";
-            this.pSQLiteOPASCDcsvToolStripMenuItem.Size = new System.Drawing.Size(346, 22);
+            this.pSQLiteOPASCDcsvToolStripMenuItem.Size = new System.Drawing.Size(367, 22);
             this.pSQLiteOPASCDcsvToolStripMenuItem.Text = "P:\\\\_SQLite\\\\OPAS\\\\CD.csv(R2R)";
             this.pSQLiteOPASCDcsvToolStripMenuItem.Click += new System.EventHandler(this.pSQLiteOPASCDcsvToolStripMenuItem_Click);
             // 
             // pSQLiteOPASOVLcsvToolStripMenuItem
             // 
             this.pSQLiteOPASOVLcsvToolStripMenuItem.Name = "pSQLiteOPASOVLcsvToolStripMenuItem";
-            this.pSQLiteOPASOVLcsvToolStripMenuItem.Size = new System.Drawing.Size(346, 22);
+            this.pSQLiteOPASOVLcsvToolStripMenuItem.Size = new System.Drawing.Size(367, 22);
             this.pSQLiteOPASOVLcsvToolStripMenuItem.Text = "P:\\\\_SQLite\\\\OPAS\\\\OVL.csv(R2R)";
             this.pSQLiteOPASOVLcsvToolStripMenuItem.Click += new System.EventHandler(this.pSQLiteOPASOVLcsvToolStripMenuItem_Click);
             // 
             // jobinStationLongTimeToolStripMenuItem
             // 
             this.jobinStationLongTimeToolStripMenuItem.Name = "jobinStationLongTimeToolStripMenuItem";
-            this.jobinStationLongTimeToolStripMenuItem.Size = new System.Drawing.Size(346, 22);
+            this.jobinStationLongTimeToolStripMenuItem.Size = new System.Drawing.Size(367, 22);
             this.jobinStationLongTimeToolStripMenuItem.Text = "JobinStation(LongTime)";
             this.jobinStationLongTimeToolStripMenuItem.Click += new System.EventHandler(this.jobinStationLongTimeToolStripMenuItem_Click);
             // 
             // mfgOracleFlowRelatedToolStripMenuItem
             // 
             this.mfgOracleFlowRelatedToolStripMenuItem.Name = "mfgOracleFlowRelatedToolStripMenuItem";
-            this.mfgOracleFlowRelatedToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.mfgOracleFlowRelatedToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.mfgOracleFlowRelatedToolStripMenuItem.Text = "MfgOracleFlowRelated";
             this.mfgOracleFlowRelatedToolStripMenuItem.Click += new System.EventHandler(this.mfgOracleFlowRelatedToolStripMenuItem_Click);
             // 
             // mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem
             // 
             this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem.Name = "mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem";
-            this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem.Text = "MfgOracleEsfToolAvailable(ReworkMove)";
             this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem.Click += new System.EventHandler(this.mfgOracleEsfToolAvailableReworkMoveToolStripMenuItem_Click);
             // 
             // callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem
             // 
             this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem.Name = "callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem";
-            this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
             this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem.Text = "CallPythonUpdateAweNikonEga_VeryLongTime";
             this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem.Click += new System.EventHandler(this.callPythonUpdateAweNikonEgaVeryLongTimeToolStripMenuItem_Click);
             // 
             // 流程查询ToolStripMenuItem1
             // 
             this.流程查询ToolStripMenuItem1.Name = "流程查询ToolStripMenuItem1";
-            this.流程查询ToolStripMenuItem1.Size = new System.Drawing.Size(244, 22);
+            this.流程查询ToolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
             this.流程查询ToolStripMenuItem1.Text = "流程查询";
             this.流程查询ToolStripMenuItem1.Click += new System.EventHandler(this.流程查询ToolStripMenuItem1_Click);
             // 
             // 删除CDSEMRECIPEToolStripMenuItem
             // 
             this.删除CDSEMRECIPEToolStripMenuItem.Name = "删除CDSEMRECIPEToolStripMenuItem";
-            this.删除CDSEMRECIPEToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.删除CDSEMRECIPEToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.删除CDSEMRECIPEToolStripMenuItem.Text = "删除CD_SEM_RECIPE";
             this.删除CDSEMRECIPEToolStripMenuItem.Click += new System.EventHandler(this.删除CDSEMRECIPEToolStripMenuItem_Click);
             // 
             // opasSqlWipJobinStationToolStripMenuItem
             // 
             this.opasSqlWipJobinStationToolStripMenuItem.Name = "opasSqlWipJobinStationToolStripMenuItem";
-            this.opasSqlWipJobinStationToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.opasSqlWipJobinStationToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.opasSqlWipJobinStationToolStripMenuItem.Text = "OpasSql:Wip_JobinStation";
             this.opasSqlWipJobinStationToolStripMenuItem.Click += new System.EventHandler(this.opasSqlWipJobinStationToolStripMenuItem_Click);
             // 
             // opasSqlCDToolStripMenuItem
             // 
             this.opasSqlCDToolStripMenuItem.Name = "opasSqlCDToolStripMenuItem";
-            this.opasSqlCDToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.opasSqlCDToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.opasSqlCDToolStripMenuItem.Text = "OpasSql:CD";
             this.opasSqlCDToolStripMenuItem.Click += new System.EventHandler(this.opasSqlCDToolStripMenuItem_Click);
             // 
             // nikon对位方式更新ToolStripMenuItem
             // 
             this.nikon对位方式更新ToolStripMenuItem.Name = "nikon对位方式更新ToolStripMenuItem";
-            this.nikon对位方式更新ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.nikon对位方式更新ToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.nikon对位方式更新ToolStripMenuItem.Text = "Nikon对位方式更新";
             this.nikon对位方式更新ToolStripMenuItem.Click += new System.EventHandler(this.nikon对位方式更新ToolStripMenuItem_Click);
             // 
             // seqLogFileNameToolStripMenuItem
             // 
             this.seqLogFileNameToolStripMenuItem.Name = "seqLogFileNameToolStripMenuItem";
-            this.seqLogFileNameToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.seqLogFileNameToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.seqLogFileNameToolStripMenuItem.Text = "SeqLogFileName";
             this.seqLogFileNameToolStripMenuItem.Click += new System.EventHandler(this.seqLogFileNameToolStripMenuItem_Click);
             // 
             // deleteChartingSourceExcelFileToolStripMenuItem
             // 
             this.deleteChartingSourceExcelFileToolStripMenuItem.Name = "deleteChartingSourceExcelFileToolStripMenuItem";
-            this.deleteChartingSourceExcelFileToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.deleteChartingSourceExcelFileToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.deleteChartingSourceExcelFileToolStripMenuItem.Text = "DeleteChartingSourceExcelFile";
             this.deleteChartingSourceExcelFileToolStripMenuItem.Click += new System.EventHandler(this.deleteChartingSourceExcelFileToolStripMenuItem_Click);
             // 
             // houseKeepingAsmlAweToolStripMenuItem
             // 
             this.houseKeepingAsmlAweToolStripMenuItem.Name = "houseKeepingAsmlAweToolStripMenuItem";
-            this.houseKeepingAsmlAweToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.houseKeepingAsmlAweToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.houseKeepingAsmlAweToolStripMenuItem.Text = "HouseKeeping_AsmlAwe";
             this.houseKeepingAsmlAweToolStripMenuItem.Click += new System.EventHandler(this.houseKeepingAsmlAweToolStripMenuItem_Click);
             // 
             // fullAsmlAweLongTimeToolStripMenuItem
             // 
             this.fullAsmlAweLongTimeToolStripMenuItem.Name = "fullAsmlAweLongTimeToolStripMenuItem";
-            this.fullAsmlAweLongTimeToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.fullAsmlAweLongTimeToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.fullAsmlAweLongTimeToolStripMenuItem.Text = "FullAsmlAwe(LongTime)";
             this.fullAsmlAweLongTimeToolStripMenuItem.Click += new System.EventHandler(this.fullAsmlAweLongTimeToolStripMenuItem_Click);
             // 
@@ -738,20 +741,20 @@
             this.查看ASML曝光程序更改ToolStripMenuItem,
             this.查看当前WIP仅Part名ToolStripMenuItem});
             this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
             this.vIEWToolStripMenuItem.Text = "VIEW";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(340, 22);
             this.toolStripMenuItem4.Text = "查看所有工艺限制";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // 查看ESF每日修改记录ToolStripMenuItem
             // 
             this.查看ESF每日修改记录ToolStripMenuItem.Name = "查看ESF每日修改记录ToolStripMenuItem";
-            this.查看ESF每日修改记录ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看ESF每日修改记录ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看ESF每日修改记录ToolStripMenuItem.Text = "查看ESF每日修改记录";
             this.查看ESF每日修改记录ToolStripMenuItem.Click += new System.EventHandler(this.查看ESF每日修改记录ToolStripMenuItem_Click);
             // 
@@ -766,42 +769,42 @@
             this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem,
             this.显示可作业设备FabWipByToolStripMenuItem});
             this.产看ESF可作业设备ToolStripMenuItem.Name = "产看ESF可作业设备ToolStripMenuItem";
-            this.产看ESF可作业设备ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.产看ESF可作业设备ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.产看ESF可作业设备ToolStripMenuItem.Text = "查看ESF可作业设备";
             // 
             // 刷新显示数据需访问MFGDBToolStripMenuItem
             // 
             this.刷新显示数据需访问MFGDBToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.刷新显示数据需访问MFGDBToolStripMenuItem.Name = "刷新显示数据需访问MFGDBToolStripMenuItem";
-            this.刷新显示数据需访问MFGDBToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.刷新显示数据需访问MFGDBToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.刷新显示数据需访问MFGDBToolStripMenuItem.Text = "按_PHOTO WIP_更细数据源（需访问MFG DB）";
             this.刷新显示数据需访问MFGDBToolStripMenuItem.Click += new System.EventHandler(this.刷新显示数据需访问MFGDBToolStripMenuItem_Click);
             // 
             // 显示所有数据ToolStripMenuItem
             // 
             this.显示所有数据ToolStripMenuItem.Name = "显示所有数据ToolStripMenuItem";
-            this.显示所有数据ToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.显示所有数据ToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.显示所有数据ToolStripMenuItem.Text = "显示所有数据(PhotoWip)";
             this.显示所有数据ToolStripMenuItem.Click += new System.EventHandler(this.显示所有数据ToolStripMenuItem_Click);
             // 
             // 显示各设备WIPToolStripMenuItem
             // 
             this.显示各设备WIPToolStripMenuItem.Name = "显示各设备WIPToolStripMenuItem";
-            this.显示各设备WIPToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.显示各设备WIPToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.显示各设备WIPToolStripMenuItem.Text = "显示各设备WIP(PhotoWip By Stage)";
             this.显示各设备WIPToolStripMenuItem.Click += new System.EventHandler(this.显示各设备WIPToolStripMenuItem_Click);
             // 
             // 显示各设备WIPToolStripMenuItem1
             // 
             this.显示各设备WIPToolStripMenuItem1.Name = "显示各设备WIPToolStripMenuItem1";
-            this.显示各设备WIPToolStripMenuItem1.Size = new System.Drawing.Size(304, 22);
+            this.显示各设备WIPToolStripMenuItem1.Size = new System.Drawing.Size(336, 22);
             this.显示各设备WIPToolStripMenuItem1.Text = "显示各设备WIP（PhotoWip By All）";
             this.显示各设备WIPToolStripMenuItem1.Click += new System.EventHandler(this.显示各设备WIPToolStripMenuItem1_Click);
             // 
             // 显示可作业设备PhotoWipByPartStageToolStripMenuItem
             // 
             this.显示可作业设备PhotoWipByPartStageToolStripMenuItem.Name = "显示可作业设备PhotoWipByPartStageToolStripMenuItem";
-            this.显示可作业设备PhotoWipByPartStageToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.显示可作业设备PhotoWipByPartStageToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.显示可作业设备PhotoWipByPartStageToolStripMenuItem.Text = "显示可作业设备（PhotoWip By Part/Stage)";
             this.显示可作业设备PhotoWipByPartStageToolStripMenuItem.Click += new System.EventHandler(this.显示可作业设备PhotoWipByPartStageToolStripMenuItem_Click);
             // 
@@ -809,112 +812,112 @@
             // 
             this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.Name = "按FABWIP更新数据源需访问MFGDBToolStripMenuItem";
-            this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.Text = "按_FAB WIP_更新数据源（需访问MFG DB）";
             this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem.Click += new System.EventHandler(this.按FABWIP更新数据源需访问MFGDBToolStripMenuItem_Click);
             // 
             // 显示可作业设备FabWipByToolStripMenuItem
             // 
             this.显示可作业设备FabWipByToolStripMenuItem.Name = "显示可作业设备FabWipByToolStripMenuItem";
-            this.显示可作业设备FabWipByToolStripMenuItem.Size = new System.Drawing.Size(304, 22);
+            this.显示可作业设备FabWipByToolStripMenuItem.Size = new System.Drawing.Size(336, 22);
             this.显示可作业设备FabWipByToolStripMenuItem.Text = "显示可作业设备（FabWip By Part/Stage)";
             this.显示可作业设备FabWipByToolStripMenuItem.Click += new System.EventHandler(this.显示可作业设备FabWipByToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(316, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(340, 22);
             this.toolStripMenuItem5.Text = "查看所有涂胶程序";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // 查看CD检查结果ToolStripMenuItem
             // 
             this.查看CD检查结果ToolStripMenuItem.Name = "查看CD检查结果ToolStripMenuItem";
-            this.查看CD检查结果ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看CD检查结果ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看CD检查结果ToolStripMenuItem.Text = "查看CD检查结果（CSV）";
             this.查看CD检查结果ToolStripMenuItem.Click += new System.EventHandler(this.查看CD检查结果ToolStripMenuItem_Click);
             // 
             // 查看所有IDP数据ToolStripMenuItem
             // 
             this.查看所有IDP数据ToolStripMenuItem.Name = "查看所有IDP数据ToolStripMenuItem";
-            this.查看所有IDP数据ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看所有IDP数据ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看所有IDP数据ToolStripMenuItem.Text = "查看所有IDP数据（DB）";
             this.查看所有IDP数据ToolStripMenuItem.Click += new System.EventHandler(this.查看所有IDP数据ToolStripMenuItem_Click);
             // 
             // 查看所有AMP数据DBToolStripMenuItem
             // 
             this.查看所有AMP数据DBToolStripMenuItem.Name = "查看所有AMP数据DBToolStripMenuItem";
-            this.查看所有AMP数据DBToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看所有AMP数据DBToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看所有AMP数据DBToolStripMenuItem.Text = "查看所有AMP数据（DB）";
             this.查看所有AMP数据DBToolStripMenuItem.Click += new System.EventHandler(this.查看所有AMP数据DBToolStripMenuItem_Click);
             // 
             // 运行脚本查看MetalTopDown图片ToolStripMenuItem
             // 
             this.运行脚本查看MetalTopDown图片ToolStripMenuItem.Name = "运行脚本查看MetalTopDown图片ToolStripMenuItem";
-            this.运行脚本查看MetalTopDown图片ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.运行脚本查看MetalTopDown图片ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.运行脚本查看MetalTopDown图片ToolStripMenuItem.Text = "查看Metal TopDown图片（机器需安装Python）";
             this.运行脚本查看MetalTopDown图片ToolStripMenuItem.Click += new System.EventHandler(this.运行脚本查看MetalTopDown图片ToolStripMenuItem_Click);
             // 
             // 确认NikonSeqLog是否正常下载ToolStripMenuItem
             // 
             this.确认NikonSeqLog是否正常下载ToolStripMenuItem.Name = "确认NikonSeqLog是否正常下载ToolStripMenuItem";
-            this.确认NikonSeqLog是否正常下载ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.确认NikonSeqLog是否正常下载ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.确认NikonSeqLog是否正常下载ToolStripMenuItem.Text = "查看NikonSeqLog是否正常下载";
             this.确认NikonSeqLog是否正常下载ToolStripMenuItem.Click += new System.EventHandler(this.确认NikonSeqLog是否正常下载ToolStripMenuItem_Click);
             // 
             // 确认NikonSeqLogToolStripMenuItem
             // 
             this.确认NikonSeqLogToolStripMenuItem.Name = "确认NikonSeqLogToolStripMenuItem";
-            this.确认NikonSeqLogToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.确认NikonSeqLogToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.确认NikonSeqLogToolStripMenuItem.Text = "查看Nikon SeqLog 和 EgaLog是否正常下载";
             this.确认NikonSeqLogToolStripMenuItem.Click += new System.EventHandler(this.确认NikonSeqLogToolStripMenuItem_Click);
             // 
             // 确认Asml下载是否正常ToolStripMenuItem
             // 
             this.确认Asml下载是否正常ToolStripMenuItem.Name = "确认Asml下载是否正常ToolStripMenuItem";
-            this.确认Asml下载是否正常ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.确认Asml下载是否正常ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.确认Asml下载是否正常ToolStripMenuItem.Text = "查看Asml下载是否正常";
             this.确认Asml下载是否正常ToolStripMenuItem.Click += new System.EventHandler(this.确认Asml下载是否正常ToolStripMenuItem_Click);
             // 
             // 查看AsmlErrorLogToolStripMenuItem
             // 
             this.查看AsmlErrorLogToolStripMenuItem.Name = "查看AsmlErrorLogToolStripMenuItem";
-            this.查看AsmlErrorLogToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看AsmlErrorLogToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看AsmlErrorLogToolStripMenuItem.Text = "查看已下载AsmlErrorLog";
             this.查看AsmlErrorLogToolStripMenuItem.Click += new System.EventHandler(this.查看AsmlErrorLogToolStripMenuItem_Click);
             // 
             // 查看已下载NikonSeqLogToolStripMenuItem
             // 
             this.查看已下载NikonSeqLogToolStripMenuItem.Name = "查看已下载NikonSeqLogToolStripMenuItem";
-            this.查看已下载NikonSeqLogToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看已下载NikonSeqLogToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看已下载NikonSeqLogToolStripMenuItem.Text = "查看已下载NikonSeqLog";
             this.查看已下载NikonSeqLogToolStripMenuItem.Click += new System.EventHandler(this.查看已下载NikonSeqLogToolStripMenuItem_Click);
             // 
             // 查看已下载NikonSeqLogToolStripMenuItem1
             // 
             this.查看已下载NikonSeqLogToolStripMenuItem1.Name = "查看已下载NikonSeqLogToolStripMenuItem1";
-            this.查看已下载NikonSeqLogToolStripMenuItem1.Size = new System.Drawing.Size(316, 22);
+            this.查看已下载NikonSeqLogToolStripMenuItem1.Size = new System.Drawing.Size(340, 22);
             this.查看已下载NikonSeqLogToolStripMenuItem1.Text = "查看已下载NikonSeqLog（VB分析)";
             this.查看已下载NikonSeqLogToolStripMenuItem1.Click += new System.EventHandler(this.查看已下载NikonSeqLogToolStripMenuItem1_Click);
             // 
             // 查看产品工艺代码DieQtyChipSizeToolStripMenuItem
             // 
             this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem.Name = "查看产品工艺代码DieQtyChipSizeToolStripMenuItem";
-            this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem.Text = "查看产品工艺代码，Die Qty，Chip Size";
             this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem.Click += new System.EventHandler(this.查看产品工艺代码DieQtyChipSizeToolStripMenuItem_Click);
             // 
             // 查看光刻版ToolStripMenuItem
             // 
             this.查看光刻版ToolStripMenuItem.Name = "查看光刻版ToolStripMenuItem";
-            this.查看光刻版ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看光刻版ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看光刻版ToolStripMenuItem.Text = "查看光刻版信息(厂家，透光率）";
             this.查看光刻版ToolStripMenuItem.Click += new System.EventHandler(this.查看光刻版ToolStripMenuItem_Click);
             // 
             // 查看工艺代码层次TrackRecipeToolStripMenuItem
             // 
             this.查看工艺代码层次TrackRecipeToolStripMenuItem.Name = "查看工艺代码层次TrackRecipeToolStripMenuItem";
-            this.查看工艺代码层次TrackRecipeToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看工艺代码层次TrackRecipeToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看工艺代码层次TrackRecipeToolStripMenuItem.Text = "查看工艺代码，层次，TrackRecipe";
             this.查看工艺代码层次TrackRecipeToolStripMenuItem.Click += new System.EventHandler(this.查看工艺代码层次TrackRecipeToolStripMenuItem_Click);
             // 
@@ -924,27 +927,27 @@
             this.刷新曝光程序日期ToolStripMenuItem,
             this.查询曝光程序更改ToolStripMenuItem});
             this.查看ASML曝光程序更改ToolStripMenuItem.Name = "查看ASML曝光程序更改ToolStripMenuItem";
-            this.查看ASML曝光程序更改ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看ASML曝光程序更改ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看ASML曝光程序更改ToolStripMenuItem.Text = "查看ASML曝光程序更改";
             // 
             // 刷新曝光程序日期ToolStripMenuItem
             // 
             this.刷新曝光程序日期ToolStripMenuItem.Name = "刷新曝光程序日期ToolStripMenuItem";
-            this.刷新曝光程序日期ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.刷新曝光程序日期ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.刷新曝光程序日期ToolStripMenuItem.Text = "刷新曝光程序日期";
             this.刷新曝光程序日期ToolStripMenuItem.Click += new System.EventHandler(this.刷新曝光程序日期ToolStripMenuItem_Click);
             // 
             // 查询曝光程序更改ToolStripMenuItem
             // 
             this.查询曝光程序更改ToolStripMenuItem.Name = "查询曝光程序更改ToolStripMenuItem";
-            this.查询曝光程序更改ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.查询曝光程序更改ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.查询曝光程序更改ToolStripMenuItem.Text = "查询曝光程序更改";
             this.查询曝光程序更改ToolStripMenuItem.Click += new System.EventHandler(this.查询曝光程序更改ToolStripMenuItem_Click);
             // 
             // 查看当前WIP仅Part名ToolStripMenuItem
             // 
             this.查看当前WIP仅Part名ToolStripMenuItem.Name = "查看当前WIP仅Part名ToolStripMenuItem";
-            this.查看当前WIP仅Part名ToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.查看当前WIP仅Part名ToolStripMenuItem.Size = new System.Drawing.Size(340, 22);
             this.查看当前WIP仅Part名ToolStripMenuItem.Text = "查看当前WIP（仅Part名）";
             this.查看当前WIP仅Part名ToolStripMenuItem.Click += new System.EventHandler(this.查看当前WIP仅Part名ToolStripMenuItem_Click);
             // 
@@ -957,41 +960,41 @@
             this.toolStripMenuItem12,
             this.自定义查询ToolStripMenuItem});
             this.eXTRAToolStripMenuItem.Name = "eXTRAToolStripMenuItem";
-            this.eXTRAToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.eXTRAToolStripMenuItem.Size = new System.Drawing.Size(112, 21);
             this.eXTRAToolStripMenuItem.Text = "BATCH_REPORT";
             // 
             // batchReportQueryToolStripMenuItem
             // 
             this.batchReportQueryToolStripMenuItem.Name = "batchReportQueryToolStripMenuItem";
-            this.batchReportQueryToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.batchReportQueryToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.batchReportQueryToolStripMenuItem.Text = "单个产品照明条件查询";
             this.batchReportQueryToolStripMenuItem.Click += new System.EventHandler(this.batchReportQueryToolStripMenuItem_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(244, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(255, 22);
             this.toolStripMenuItem10.Text = "按工艺TrackRecipe统计照明条件";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(244, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(255, 22);
             this.toolStripMenuItem11.Text = "Focus统计";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(244, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(255, 22);
             this.toolStripMenuItem12.Text = "列出BatchReport参数";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
             // 自定义查询ToolStripMenuItem
             // 
             this.自定义查询ToolStripMenuItem.Name = "自定义查询ToolStripMenuItem";
-            this.自定义查询ToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.自定义查询ToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.自定义查询ToolStripMenuItem.Text = "自定义查询";
             this.自定义查询ToolStripMenuItem.Click += new System.EventHandler(this.自定义查询ToolStripMenuItem_Click);
             // 
@@ -1001,9 +1004,9 @@
             this.aWELOGToolStripMenuItem,
             this.统计WqMccDeltaToolStripMenuItem,
             this.矢量图ToolStripMenuItem2,
-            this.导入单个AWE作图ToolStripMenuItem});
+            this.单个AWE文件分析ToolStripMenuItem});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(35, 20);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(47, 21);
             this.toolStripMenuItem3.Text = "AWE";
             // 
             // aWELOGToolStripMenuItem
@@ -1032,16 +1035,40 @@
             // 步骤一索引ToolStripMenuItem
             // 
             this.步骤一索引ToolStripMenuItem.Name = "步骤一索引ToolStripMenuItem";
-            this.步骤一索引ToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.步骤一索引ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.步骤一索引ToolStripMenuItem.Text = "步骤一：索引";
             this.步骤一索引ToolStripMenuItem.Click += new System.EventHandler(this.步骤一索引ToolStripMenuItem_Click);
             // 
             // 步骤二双击列表项作图ToolStripMenuItem
             // 
             this.步骤二双击列表项作图ToolStripMenuItem.Name = "步骤二双击列表项作图ToolStripMenuItem";
-            this.步骤二双击列表项作图ToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.步骤二双击列表项作图ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.步骤二双击列表项作图ToolStripMenuItem.Text = "步骤二：双击列表项作图";
             this.步骤二双击列表项作图ToolStripMenuItem.Click += new System.EventHandler(this.步骤二双击列表项作图ToolStripMenuItem_Click);
+            // 
+            // 单个AWE文件分析ToolStripMenuItem
+            // 
+            this.单个AWE文件分析ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem,
+            this.步骤二WaferQualitySummaryToolStripMenuItem,
+            this.步骤二25thOrderResidualToolStripMenuItem});
+            this.单个AWE文件分析ToolStripMenuItem.Name = "单个AWE文件分析ToolStripMenuItem";
+            this.单个AWE文件分析ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.单个AWE文件分析ToolStripMenuItem.Text = "单个AWE文件分析";
+            // 
+            // 步骤一读入数据并拟合5阶信号ToolStripMenuItem
+            // 
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem.Name = "步骤一读入数据并拟合5阶信号ToolStripMenuItem";
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem.Size = new System.Drawing.Size(324, 22);
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem.Text = "步骤一：读入数据并拟合5阶信号";
+            this.步骤一读入数据并拟合5阶信号ToolStripMenuItem.Click += new System.EventHandler(this.步骤一读入数据并拟合5阶信号ToolStripMenuItem_Click);
+            // 
+            // 步骤二WaferQualitySummaryToolStripMenuItem
+            // 
+            this.步骤二WaferQualitySummaryToolStripMenuItem.Name = "步骤二WaferQualitySummaryToolStripMenuItem";
+            this.步骤二WaferQualitySummaryToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
+            this.步骤二WaferQualitySummaryToolStripMenuItem.Text = "步骤二 /1：WaferQualityDeltaShiftMccSummary";
+            this.步骤二WaferQualitySummaryToolStripMenuItem.Click += new System.EventHandler(this.步骤二WaferQualitySummaryToolStripMenuItem_Click_1);
             // 
             // nIKONToolStripMenuItem
             // 
@@ -1051,27 +1078,27 @@
             this.查看对位数据ToolStripMenuItem,
             this.矢量图ToolStripMenuItem});
             this.nIKONToolStripMenuItem.Name = "nIKONToolStripMenuItem";
-            this.nIKONToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.nIKONToolStripMenuItem.Size = new System.Drawing.Size(62, 21);
             this.nIKONToolStripMenuItem.Text = "NIKON";
             // 
             // 查看预对位ToolStripMenuItem
             // 
             this.查看预对位ToolStripMenuItem.Name = "查看预对位ToolStripMenuItem";
-            this.查看预对位ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.查看预对位ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.查看预对位ToolStripMenuItem.Text = "查看预对位";
             this.查看预对位ToolStripMenuItem.Click += new System.EventHandler(this.查看预对位ToolStripMenuItem_Click);
             // 
             // 查看对位方式ToolStripMenuItem
             // 
             this.查看对位方式ToolStripMenuItem.Name = "查看对位方式ToolStripMenuItem";
-            this.查看对位方式ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.查看对位方式ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.查看对位方式ToolStripMenuItem.Text = "查看对位方式";
             this.查看对位方式ToolStripMenuItem.Click += new System.EventHandler(this.查看对位方式ToolStripMenuItem_Click);
             // 
             // 查看对位数据ToolStripMenuItem
             // 
             this.查看对位数据ToolStripMenuItem.Name = "查看对位数据ToolStripMenuItem";
-            this.查看对位数据ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.查看对位数据ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.查看对位数据ToolStripMenuItem.Text = "查看对位数据";
             this.查看对位数据ToolStripMenuItem.Click += new System.EventHandler(this.查看对位数据ToolStripMenuItem_Click);
             // 
@@ -1081,20 +1108,20 @@
             this.步骤1列出索引ToolStripMenuItem,
             this.步骤2双击列表框选中项作图ToolStripMenuItem});
             this.矢量图ToolStripMenuItem.Name = "矢量图ToolStripMenuItem";
-            this.矢量图ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.矢量图ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.矢量图ToolStripMenuItem.Text = "矢量图";
             // 
             // 步骤1列出索引ToolStripMenuItem
             // 
             this.步骤1列出索引ToolStripMenuItem.Name = "步骤1列出索引ToolStripMenuItem";
-            this.步骤1列出索引ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.步骤1列出索引ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.步骤1列出索引ToolStripMenuItem.Text = "步骤1：列出索引";
             this.步骤1列出索引ToolStripMenuItem.Click += new System.EventHandler(this.步骤1列出索引ToolStripMenuItem_Click);
             // 
             // 步骤2双击列表框选中项作图ToolStripMenuItem
             // 
             this.步骤2双击列表框选中项作图ToolStripMenuItem.Name = "步骤2双击列表框选中项作图ToolStripMenuItem";
-            this.步骤2双击列表框选中项作图ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.步骤2双击列表框选中项作图ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.步骤2双击列表框选中项作图ToolStripMenuItem.Text = "步骤2：双击列表框选中项作图";
             // 
             // 返工ToolStripMenuItem
@@ -1104,27 +1131,27 @@
             this.查询统计数据ToolStripMenuItem,
             this.作图ToolStripMenuItem});
             this.返工ToolStripMenuItem.Name = "返工ToolStripMenuItem";
-            this.返工ToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.返工ToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
             this.返工ToolStripMenuItem.Text = "REWORK";
             // 
             // 查询原始数据ToolStripMenuItem
             // 
             this.查询原始数据ToolStripMenuItem.Name = "查询原始数据ToolStripMenuItem";
-            this.查询原始数据ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.查询原始数据ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.查询原始数据ToolStripMenuItem.Text = "查询原始数据";
             this.查询原始数据ToolStripMenuItem.Click += new System.EventHandler(this.查询原始数据ToolStripMenuItem_Click);
             // 
             // 查询统计数据ToolStripMenuItem
             // 
             this.查询统计数据ToolStripMenuItem.Name = "查询统计数据ToolStripMenuItem";
-            this.查询统计数据ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.查询统计数据ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.查询统计数据ToolStripMenuItem.Text = "查询统计数据";
             this.查询统计数据ToolStripMenuItem.Click += new System.EventHandler(this.查询统计数据ToolStripMenuItem_Click);
             // 
             // 作图ToolStripMenuItem
             // 
             this.作图ToolStripMenuItem.Name = "作图ToolStripMenuItem";
-            this.作图ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.作图ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.作图ToolStripMenuItem.Text = "作图";
             this.作图ToolStripMenuItem.Click += new System.EventHandler(this.作图ToolStripMenuItem_Click);
             // 
@@ -1145,97 +1172,97 @@
             this.查询CD按工艺ToolStripMenuItem,
             this.jobinStationToolStripMenuItem});
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(35, 20);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(43, 21);
             this.toolStripMenuItem13.Text = "R2R";
             // 
             // chartRawDataDB查询ToolStripMenuItem
             // 
             this.chartRawDataDB查询ToolStripMenuItem.Name = "chartRawDataDB查询ToolStripMenuItem";
-            this.chartRawDataDB查询ToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.chartRawDataDB查询ToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.chartRawDataDB查询ToolStripMenuItem.Text = "ChartRawData.DB查询(定期更新）";
             this.chartRawDataDB查询ToolStripMenuItem.Click += new System.EventHandler(this.chartRawDataDB查询ToolStripMenuItem_Click);
             // 
             // 查询CDToolStripMenuItem3
             // 
             this.查询CDToolStripMenuItem3.Name = "查询CDToolStripMenuItem3";
-            this.查询CDToolStripMenuItem3.Size = new System.Drawing.Size(262, 22);
+            this.查询CDToolStripMenuItem3.Size = new System.Drawing.Size(267, 22);
             this.查询CDToolStripMenuItem3.Text = "    查询CD";
             this.查询CDToolStripMenuItem3.Click += new System.EventHandler(this.查询CDToolStripMenuItem3_Click);
             // 
             // 查询OVLToolStripMenuItem
             // 
             this.查询OVLToolStripMenuItem.Name = "查询OVLToolStripMenuItem";
-            this.查询OVLToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询OVLToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询OVLToolStripMenuItem.Text = "    查询OVL";
             this.查询OVLToolStripMenuItem.Click += new System.EventHandler(this.查询OVLToolStripMenuItem_Click_1);
             // 
             // 查询CDToolStripMenuItem1
             // 
             this.查询CDToolStripMenuItem1.Name = "查询CDToolStripMenuItem1";
-            this.查询CDToolStripMenuItem1.Size = new System.Drawing.Size(262, 22);
+            this.查询CDToolStripMenuItem1.Size = new System.Drawing.Size(267, 22);
             this.查询CDToolStripMenuItem1.Text = "    查询CD QC";
             this.查询CDToolStripMenuItem1.Click += new System.EventHandler(this.查询CDToolStripMenuItem1_Click);
             // 
             // 查询OVLToolStripMenuItem1
             // 
             this.查询OVLToolStripMenuItem1.Name = "查询OVLToolStripMenuItem1";
-            this.查询OVLToolStripMenuItem1.Size = new System.Drawing.Size(262, 22);
+            this.查询OVLToolStripMenuItem1.Size = new System.Drawing.Size(267, 22);
             this.查询OVLToolStripMenuItem1.Text = "    查询OVL QC";
             this.查询OVLToolStripMenuItem1.Click += new System.EventHandler(this.查询OVLToolStripMenuItem1_Click);
             // 
             // 查询ASMLToolStripMenuItem
             // 
             this.查询ASMLToolStripMenuItem.Name = "查询ASMLToolStripMenuItem";
-            this.查询ASMLToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询ASMLToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询ASMLToolStripMenuItem.Text = "    查询ASML产品趋势";
             this.查询ASMLToolStripMenuItem.Click += new System.EventHandler(this.查询ASMLToolStripMenuItem_Click);
             // 
             // 查询NikonLSAToolStripMenuItem
             // 
             this.查询NikonLSAToolStripMenuItem.Name = "查询NikonLSAToolStripMenuItem";
-            this.查询NikonLSAToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询NikonLSAToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询NikonLSAToolStripMenuItem.Text = "    查询Nikon LSA产品趋势";
             this.查询NikonLSAToolStripMenuItem.Click += new System.EventHandler(this.查询NikonLSAToolStripMenuItem_Click);
             // 
             // 查询NikonFIA产品趋势ToolStripMenuItem
             // 
             this.查询NikonFIA产品趋势ToolStripMenuItem.Name = "查询NikonFIA产品趋势ToolStripMenuItem";
-            this.查询NikonFIA产品趋势ToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询NikonFIA产品趋势ToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询NikonFIA产品趋势ToolStripMenuItem.Text = "    查询Nikon FIA产品趋势";
             this.查询NikonFIA产品趋势ToolStripMenuItem.Click += new System.EventHandler(this.查询NikonFIA产品趋势ToolStripMenuItem_Click);
             // 
             // r2RDB查询ToolStripMenuItem
             // 
             this.r2RDB查询ToolStripMenuItem.Name = "r2RDB查询ToolStripMenuItem";
-            this.r2RDB查询ToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.r2RDB查询ToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.r2RDB查询ToolStripMenuItem.Text = "R2R.DB查询（不定期更新）";
             this.r2RDB查询ToolStripMenuItem.Click += new System.EventHandler(this.r2RDB查询ToolStripMenuItem_Click);
             // 
             // 查询CDToolStripMenuItem
             // 
             this.查询CDToolStripMenuItem.Name = "查询CDToolStripMenuItem";
-            this.查询CDToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询CDToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询CDToolStripMenuItem.Text = "    查询CD";
             this.查询CDToolStripMenuItem.Click += new System.EventHandler(this.查询CDToolStripMenuItem_Click_1);
             // 
             // 查询OVLToolStripMenuItem2
             // 
             this.查询OVLToolStripMenuItem2.Name = "查询OVLToolStripMenuItem2";
-            this.查询OVLToolStripMenuItem2.Size = new System.Drawing.Size(262, 22);
+            this.查询OVLToolStripMenuItem2.Size = new System.Drawing.Size(267, 22);
             this.查询OVLToolStripMenuItem2.Text = "    查询OVL";
             this.查询OVLToolStripMenuItem2.Click += new System.EventHandler(this.查询OVLToolStripMenuItem2_Click);
             // 
             // 查询CD按工艺ToolStripMenuItem
             // 
             this.查询CD按工艺ToolStripMenuItem.Name = "查询CD按工艺ToolStripMenuItem";
-            this.查询CD按工艺ToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询CD按工艺ToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询CD按工艺ToolStripMenuItem.Text = "    查询CD（按工艺）";
             this.查询CD按工艺ToolStripMenuItem.Click += new System.EventHandler(this.查询CD按工艺ToolStripMenuItem_Click);
             // 
             // jobinStationToolStripMenuItem
             // 
             this.jobinStationToolStripMenuItem.Name = "jobinStationToolStripMenuItem";
-            this.jobinStationToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.jobinStationToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.jobinStationToolStripMenuItem.Text = "JobinStation值查询（不定期更新）";
             this.jobinStationToolStripMenuItem.Click += new System.EventHandler(this.jobinStationToolStripMenuItem_Click);
             // 
@@ -1244,7 +1271,7 @@
             this.r2RToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cDOVLJobinStation同步显示ToolStripMenuItem});
             this.r2RToolStripMenuItem.Name = "r2RToolStripMenuItem";
-            this.r2RToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.r2RToolStripMenuItem.Size = new System.Drawing.Size(49, 21);
             this.r2RToolStripMenuItem.Text = "Extra";
             // 
             // cDOVLJobinStation同步显示ToolStripMenuItem
@@ -1263,83 +1290,83 @@
             this.步骤九可选列出反馈失败ToolStripMenuItem,
             this.执行步骤一二后执行ToolStripMenuItem});
             this.cDOVLJobinStation同步显示ToolStripMenuItem.Name = "cDOVLJobinStation同步显示ToolStripMenuItem";
-            this.cDOVLJobinStation同步显示ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.cDOVLJobinStation同步显示ToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.cDOVLJobinStation同步显示ToolStripMenuItem.Text = "CD/OVL/JobInStation";
             // 
             // 步骤一ToolStripMenuItem
             // 
             this.步骤一ToolStripMenuItem.Name = "步骤一ToolStripMenuItem";
-            this.步骤一ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤一ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤一ToolStripMenuItem.Text = "步骤一：说明";
             this.步骤一ToolStripMenuItem.Click += new System.EventHandler(this.步骤一ToolStripMenuItem_Click);
             // 
             // 步骤二SQLITEDBToolStripMenuItem
             // 
             this.步骤二SQLITEDBToolStripMenuItem.Name = "步骤二SQLITEDBToolStripMenuItem";
-            this.步骤二SQLITEDBToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤二SQLITEDBToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤二SQLITEDBToolStripMenuItem.Text = "步骤二：生成JobinStation数据库";
             this.步骤二SQLITEDBToolStripMenuItem.Click += new System.EventHandler(this.步骤二SQLITEDBToolStripMenuItem_Click);
             // 
             // 步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem
             // 
             this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem.Name = "步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem";
-            this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem.Text = "步骤三：按设备前后段查询CD，OVL，JobinStation";
             this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem.Click += new System.EventHandler(this.步骤三按设备前后段查询CDOVLJobinStationToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(364, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(375, 22);
             this.toolStripMenuItem6.Text = "   3.1 仅筛选出最新的？个全新新品";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(364, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(375, 22);
             this.toolStripMenuItem7.Text = "   3.2 或仅筛选出最新的？个衍生新品";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // 步骤四可选仅列出CDOVL异常LOTToolStripMenuItem
             // 
             this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem.Name = "步骤四可选仅列出CDOVL异常LOTToolStripMenuItem";
-            this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem.Text = "步骤四：（可选）仅列出CD，OVL异常LOT";
             this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem.Click += new System.EventHandler(this.步骤四可选仅列出CDOVL异常LOTToolStripMenuItem_Click);
             // 
             // 步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem
             // 
             this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem.Name = "步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem";
-            this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem.Text = "步骤五：（可选）表格二JobInStation导出为Nikon格式";
             this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem.Click += new System.EventHandler(this.步骤五可选JobInStation导出为Nikon格式ToolStripMenuItem_Click);
             // 
             // 步骤六可选JobInStation导出为Asml格式ToolStripMenuItem
             // 
             this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem.Name = "步骤六可选JobInStation导出为Asml格式ToolStripMenuItem";
-            this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem.Text = "步骤六：（可选）表格二JobInStation导出为Asml格式";
             this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem.Click += new System.EventHandler(this.步骤六可选JobInStation导出为Asml格式ToolStripMenuItem_Click);
             // 
             // 步骤七可选列出TestWaferPerLotToolStripMenuItem
             // 
             this.步骤七可选列出TestWaferPerLotToolStripMenuItem.Name = "步骤七可选列出TestWaferPerLotToolStripMenuItem";
-            this.步骤七可选列出TestWaferPerLotToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤七可选列出TestWaferPerLotToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤七可选列出TestWaferPerLotToolStripMenuItem.Text = "步骤七：（可选）列出Test Wafer Per Lot";
             this.步骤七可选列出TestWaferPerLotToolStripMenuItem.Click += new System.EventHandler(this.步骤七可选列出TestWaferPerLotToolStripMenuItem_Click);
             // 
             // 步骤八可选列出限制作业ToolStripMenuItem
             // 
             this.步骤八可选列出限制作业ToolStripMenuItem.Name = "步骤八可选列出限制作业ToolStripMenuItem";
-            this.步骤八可选列出限制作业ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤八可选列出限制作业ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤八可选列出限制作业ToolStripMenuItem.Text = "步骤八：（可选）列出限制作业";
             this.步骤八可选列出限制作业ToolStripMenuItem.Click += new System.EventHandler(this.步骤八可选列出限制作业ToolStripMenuItem_Click);
             // 
             // 步骤九可选列出反馈失败ToolStripMenuItem
             // 
             this.步骤九可选列出反馈失败ToolStripMenuItem.Name = "步骤九可选列出反馈失败ToolStripMenuItem";
-            this.步骤九可选列出反馈失败ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.步骤九可选列出反馈失败ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.步骤九可选列出反馈失败ToolStripMenuItem.Text = "步骤九：（可选）列出反馈失败";
             this.步骤九可选列出反馈失败ToolStripMenuItem.Click += new System.EventHandler(this.步骤九可选列出反馈失败ToolStripMenuItem_Click);
             // 
@@ -1349,20 +1376,20 @@
             this.查询在线WIPJobinStationToolStripMenuItem,
             this.查询JobinStation套刻补值是否异常ToolStripMenuItem});
             this.执行步骤一二后执行ToolStripMenuItem.Name = "执行步骤一二后执行ToolStripMenuItem";
-            this.执行步骤一二后执行ToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
+            this.执行步骤一二后执行ToolStripMenuItem.Size = new System.Drawing.Size(375, 22);
             this.执行步骤一二后执行ToolStripMenuItem.Text = "执行步骤一，二后执行";
             // 
             // 查询在线WIPJobinStationToolStripMenuItem
             // 
             this.查询在线WIPJobinStationToolStripMenuItem.Name = "查询在线WIPJobinStationToolStripMenuItem";
-            this.查询在线WIPJobinStationToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询在线WIPJobinStationToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询在线WIPJobinStationToolStripMenuItem.Text = "查询在线WIP JobinStation";
             this.查询在线WIPJobinStationToolStripMenuItem.Click += new System.EventHandler(this.查询在线WIPJobinStationToolStripMenuItem_Click);
             // 
             // 查询JobinStation套刻补值是否异常ToolStripMenuItem
             // 
             this.查询JobinStation套刻补值是否异常ToolStripMenuItem.Name = "查询JobinStation套刻补值是否异常ToolStripMenuItem";
-            this.查询JobinStation套刻补值是否异常ToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.查询JobinStation套刻补值是否异常ToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.查询JobinStation套刻补值是否异常ToolStripMenuItem.Text = "查询JobinStation套刻补值是否异常";
             this.查询JobinStation套刻补值是否异常ToolStripMenuItem.Click += new System.EventHandler(this.查询JobinStation套刻补值是否异常ToolStripMenuItem_Click);
             // 
@@ -1576,102 +1603,102 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(3, 169);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series3";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series4";
-            series4.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series4.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series5";
-            series5.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series5.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series6";
-            series6.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series6.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series7";
-            series7.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series7.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series8";
-            series8.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series8.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series9";
-            series9.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series9.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series10";
-            series10.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series10.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series11";
-            series11.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series11.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series12";
-            series12.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series12.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Series13";
-            series13.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series13.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Series14";
-            series14.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series14.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "Series15";
-            series15.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series15.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.Name = "Series16";
-            series16.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            series16.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
-            this.chart1.Series.Add(series11);
-            this.chart1.Series.Add(series12);
-            this.chart1.Series.Add(series13);
-            this.chart1.Series.Add(series14);
-            this.chart1.Series.Add(series15);
-            this.chart1.Series.Add(series16);
+            series33.ChartArea = "ChartArea1";
+            series33.Legend = "Legend1";
+            series33.Name = "Series1";
+            series34.ChartArea = "ChartArea1";
+            series34.Legend = "Legend1";
+            series34.Name = "Series2";
+            series35.ChartArea = "ChartArea1";
+            series35.Legend = "Legend1";
+            series35.Name = "Series3";
+            series36.ChartArea = "ChartArea1";
+            series36.Legend = "Legend1";
+            series36.Name = "Series4";
+            series36.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series36.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series37.ChartArea = "ChartArea1";
+            series37.Legend = "Legend1";
+            series37.Name = "Series5";
+            series37.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series37.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series38.ChartArea = "ChartArea1";
+            series38.Legend = "Legend1";
+            series38.Name = "Series6";
+            series38.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series38.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series39.ChartArea = "ChartArea1";
+            series39.Legend = "Legend1";
+            series39.Name = "Series7";
+            series39.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series39.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series40.ChartArea = "ChartArea1";
+            series40.Legend = "Legend1";
+            series40.Name = "Series8";
+            series40.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series40.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series41.ChartArea = "ChartArea1";
+            series41.Legend = "Legend1";
+            series41.Name = "Series9";
+            series41.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series41.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series42.ChartArea = "ChartArea1";
+            series42.Legend = "Legend1";
+            series42.Name = "Series10";
+            series42.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series42.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series43.ChartArea = "ChartArea1";
+            series43.Legend = "Legend1";
+            series43.Name = "Series11";
+            series43.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series43.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series44.ChartArea = "ChartArea1";
+            series44.Legend = "Legend1";
+            series44.Name = "Series12";
+            series44.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series44.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series45.ChartArea = "ChartArea1";
+            series45.Legend = "Legend1";
+            series45.Name = "Series13";
+            series45.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series45.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series46.ChartArea = "ChartArea1";
+            series46.Legend = "Legend1";
+            series46.Name = "Series14";
+            series46.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series46.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series47.ChartArea = "ChartArea1";
+            series47.Legend = "Legend1";
+            series47.Name = "Series15";
+            series47.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series47.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series48.ChartArea = "ChartArea1";
+            series48.Legend = "Legend1";
+            series48.Name = "Series16";
+            series48.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            series48.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.chart1.Series.Add(series33);
+            this.chart1.Series.Add(series34);
+            this.chart1.Series.Add(series35);
+            this.chart1.Series.Add(series36);
+            this.chart1.Series.Add(series37);
+            this.chart1.Series.Add(series38);
+            this.chart1.Series.Add(series39);
+            this.chart1.Series.Add(series40);
+            this.chart1.Series.Add(series41);
+            this.chart1.Series.Add(series42);
+            this.chart1.Series.Add(series43);
+            this.chart1.Series.Add(series44);
+            this.chart1.Series.Add(series45);
+            this.chart1.Series.Add(series46);
+            this.chart1.Series.Add(series47);
+            this.chart1.Series.Add(series48);
             this.chart1.Size = new System.Drawing.Size(997, 350);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "cdChart";
@@ -2984,12 +3011,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // 导入单个AWE作图ToolStripMenuItem
+            // 步骤二25thOrderResidualToolStripMenuItem
             // 
-            this.导入单个AWE作图ToolStripMenuItem.Name = "导入单个AWE作图ToolStripMenuItem";
-            this.导入单个AWE作图ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.导入单个AWE作图ToolStripMenuItem.Text = "导入单个AWE作图";
-            this.导入单个AWE作图ToolStripMenuItem.Click += new System.EventHandler(this.导入单个AWE作图ToolStripMenuItem_Click);
+            this.步骤二25thOrderResidualToolStripMenuItem.Name = "步骤二25thOrderResidualToolStripMenuItem";
+            this.步骤二25thOrderResidualToolStripMenuItem.Size = new System.Drawing.Size(348, 22);
+            this.步骤二25thOrderResidualToolStripMenuItem.Text = "步骤二 /2：5th_Order_Residual";
+            this.步骤二25thOrderResidualToolStripMenuItem.Click += new System.EventHandler(this.步骤二25thOrderResidualToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -3007,7 +3034,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.测试用);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(8, 27);
+            this.MinimumSize = new System.Drawing.Size(16, 39);
             this.Name = "Form1";
             this.Text = "光刻日常查询";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -3311,7 +3338,10 @@
         private System.Windows.Forms.CheckBox checkBoxBaseline;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBoxBaseline;
-        private System.Windows.Forms.ToolStripMenuItem 导入单个AWE作图ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 单个AWE文件分析ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 步骤一读入数据并拟合5阶信号ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 步骤二WaferQualitySummaryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 步骤二25thOrderResidualToolStripMenuItem;
     }
 }
 

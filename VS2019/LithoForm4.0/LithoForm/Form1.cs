@@ -4014,9 +4014,9 @@ namespace LithoForm
             }
         }
 
-        private void 导入单个AWE作图ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string filename;
+        private void 步骤一读入数据并拟合5阶信号ToolStripMenuItem_Click(object sender, EventArgs e)
+        {        
+        string filename;
             openFileDialog1.InitialDirectory = @"C:\temp\";
             openFileDialog1.Title = "选择AWE文件";
             openFileDialog1.Filter = "awe文件(*.awe)|*.awe";//
@@ -4027,14 +4027,27 @@ namespace LithoForm
             else
             { MessageBox.Show("未选择AWE文件"); return; }
 
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+           dt1= LithoForm.Vector.ReadAweFile(filename);
+            sw.Stop();
+            MessageBox.Show("Reading AWE & 5th Order Signal Linear Regression\n\nDONE !\n\n\nTotal Time: " + sw.ElapsedMilliseconds + " msec");
 
-            LithoForm.Vector.ReadAweFile(filename);
+           
 
 
         }
+        private void 步骤二WaferQualitySummaryToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {        
+        dtShow = LithoForm.Vector.SumWqMccDelta(ref dt1);
+            dataGridView1.DataSource = dtShow;
+        }
 
-
-
+        private void 步骤二25thOrderResidualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dtShow = LithoForm.Vector.SumResidual(ref dt1);
+            dataGridView1.DataSource = dt1;
+        }
         #endregion
 
         #region NIKON
@@ -7873,7 +7886,7 @@ namespace LithoForm
 
         }
 
-     
+      
     }
 
 
