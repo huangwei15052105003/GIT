@@ -634,21 +634,7 @@ namespace LithoForm
                 }
                 f = null; tmpArr = null;
             }
-            // basic alignment data-->Not Needed
-            /*
-            if (true)
-            {
-
-                DataTable validNo = DtChooseColumns(ref dt, new List<string>() { "WaferNr", "MarkNr", "NomPosX", "NomPosY", "BasicMarkType" });
-                //validNo=validNo.DefaultView.ToTable(true, new string[] { "WaferNr", "MarkNr", "NomPosX", "NomPosY", "BasicMarkType" });
-                drs = validNo.Select("BasicMarkType like '%-X'");
-                DataTable validX = validNo.Clone();
-                foreach (DataRow row in drs) { validNo.ImportRow(row); }
-                drs = validNo.Select("BasicMarkType like '%-Y'");
-                DataTable validY = validNo.Clone();
-                foreach (DataRow row in drs) { validNo.ImportRow(row); }
-            }
-            */
+      
             //delta shift
             if (true)
             {
@@ -740,7 +726,7 @@ namespace LithoForm
                     }
                 }
             }
-            //summary
+            //summary-->single wafer data,single wafer residual
             if (true)
             {
                 foreach (string x in new string[] {"index","5XRedLinear","5XGreenLinear","5XSmLinear",
@@ -763,9 +749,79 @@ namespace LithoForm
 
                 }
             }
+            //match X，Y -->NormPosX,NormPoxY
+            //匹配 XY坐标
+            if (true)
+            {
+                DataTable dtTmp = dt.DefaultView.ToTable(true, "NomPosX", "NomPosY", "BasicMarkType");
+                List<double> xx = new List<double>();
+                List<double> xy = new List<double>();
+                List<double> yx = new List<double>();
+                List<double> yy = new List<double>();
+                foreach (DataRow row in dtTmp.Rows)
+                {
+                    if (row[2].ToString().EndsWith("X"))
+                    {
+                        xx.Add(double.Parse(row[0].ToString()));
+                        xy.Add(double.Parse(row[1].ToString()));
+                    }
+                    else
+                    {
+                        yx.Add(double.Parse(row[0].ToString()));
+                        yy.Add(double.Parse(row[1].ToString()));
+                    }
+                }
+                double ox = 0;
+                foreach (double x1 in xx)
+                {
+                    foreach (double x2 in yx)
+                    {
+                        if (ox == 0)
+                        {
+                            ox = x1 - x2;
+                        }
+                        else
+                        {
+                            if (Math.Abs(x1 - x2) < Math.Abs(ox))
+                            { ox = x1 - x2; }
+                        }
+                    }
+                }
+                double oy = 0;
+                foreach (double y1 in xy)
+                {
+                    foreach (double y2 in yy)
+                    {
+                        if (oy == 0)
+                        {
+                            oy = y1 - y2;
+                        }
+                        else
+                        {
+                            if (Math.Abs(y1 - y2) < Math.Abs(oy))
+                            { oy = y1 - y2; }
+                        }
+                    }
+                }
 
+                dt.Columns.Add("xyKey", typeof(string));
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["BasicMarkType"].ToString().EndsWith("-Y"))
+                    {
+                       // row["NomPosX"] = Math.Round(double.Parse(row["NomPosX"].ToString()) + ox, 6);
+                        //row["NomPosY"] = Math.Round(double.Parse(row["NomPosY"].ToString()) + oy, 6);
+                       // row["xyKey"] = Math.Round(double.Parse(row["NomPosX"].ToString()) + ox, 6).ToString() + "," + Math.Round(double.Parse(row["NomPosY"].ToString()) + oy, 6).ToString();
+                        row["xyKey"] = Math.Round(double.Parse(row["NomPosX"].ToString()) + ox, 6).ToString() + "," + Math.Round(double.Parse(row["NomPosY"].ToString()) + oy, 6).ToString();
 
-           
+                    }
+                    else
+                    {
+                        row["xyKey"] = row["NomPosX"].ToString() + "," + row["NomPosY"].ToString();
+                    }
+                }
+            }
+
 
             return dt;
 
@@ -832,26 +888,23 @@ namespace LithoForm
             }
         }
 
-        public static DataTable SumWqMccDelta(ref DataTable dt)
+        public static DataTable SumWqMccDeltaResidual(ref DataTable dt)
         {
             DataTable dtSum = new DataTable();
-            dtSum.Columns.Add("WfrQty", typeof(int));
+            dtSum.Columns.Add("WfrNo", typeof(int));
             dtSum.Columns.Add("AlignShotsQty", typeof(int));
-            dtSum.Columns.Add("Type", typeof(string));
-            dtSum.Columns.Add("ValidShotsQty", typeof(int));
-            dtSum.Columns.Add("SuccessRatio", typeof(double));
-            dtSum.Columns.Add("Order", typeof(string));
-            dtSum.Columns.Add("Mark", typeof(string));
+            dtSum.Columns.Add("Orientation", typeof(string));
             dtSum.Columns.Add("Color", typeof(string));
+            dtSum.Columns.Add("Order", typeof(string));
+            dtSum.Columns.Add("Item", typeof(string));
+            dtSum.Columns.Add("ValidQty", typeof(int));                      
+            dtSum.Columns.Add("Mark", typeof(string));            
             dtSum.Columns.Add("Max", typeof(double));
             dtSum.Columns.Add("Min", typeof(double));
             dtSum.Columns.Add("Avg", typeof(double));
-            dtSum.Columns.Add("Sigma", typeof(double));
-
-
+            dtSum.Columns.Add("Variance", typeof(double));
             int WfrQty = int.Parse(dt.Rows[dt.Rows.Count - 1]["WaferNr"].ToString());
-            int AlignShotsQty;
-            double SuccessRatio;
+            int AlignShotsQty;       
             if (dt.Rows[0]["SegmentID"].ToString().Length > 0)
             {
                 AlignShotsQty = dt.Rows.Count / WfrQty / 2 / 3;
@@ -861,147 +914,214 @@ namespace LithoForm
                 AlignShotsQty = dt.Rows.Count / WfrQty / 2;
             }
 
-            foreach (string order in new string[] { "1", "5" })
-            {
-                foreach (string category in new string[] { "WQ", "MCC", "Delta" })
-                {
-                    foreach (string mark in new string[] { "X", "Y" })
-                    {
 
-                        foreach (string color in new string[] { "Red", "Green" })
+            Dictionary<string, string[]> myDic = new Dictionary<string, string[]> {
+                {"Red1X",new string[]{"[1XRedValid]='T'","1XRedWQ","1XRedMCC","XRedDelta"} },
+                {"Red1Y",new string[]{"[1YRedValid]='T'","1YRedWQ","1YRedMCC","YRedDelta"} },
+                {"Green1X",new string[]{"[1XGreenValid]='T'","1XGreenWQ", "1XGreenMCC", "XGreenDelta" } },
+                {"Green1Y",new string[]{"[1YGreenValid]='T'","1YGreenWQ","1YGreenMCC","YGreenDelta"} },
+                {"Red5X",new string[]{"[5XRedValid]='T'","5XRedWQ","5XRedMCC","5XRedLinear"} },
+                {"Red5Y",new string[]{"[5YRedValid]='T'","5YRedWQ","5YRedMCC","5YRedLinear"} },
+                {"Green5X",new string[]{"[5XGreenValid]='T'","5XGreenWQ","5XGreenMCC","5XGreenLinear"} },
+                {"Green5Y",new string[]{"[5YGreenValid]='T'","5YGreenWQ","5YGreenMCC","5YGreenLinear"} },
+                {"Sm5X",new string[]{ "([5XGreenValid]='T' or [5XRedValid]='T') ", "5XSmLinear"} },
+                {"Sm5Y",new string[]{ "([5YGreenValid]='T' or [5YRedValid]='T') ", "5YSmLinear"} },
+
+
+            };
+            for (int i = 1; i < WfrQty + 1; ++i)
+            {
+                foreach (string key in myDic.Keys)
+                {
+                    DataRow[] drs = dt.Select(myDic[key][0] + "and WaferNr='" + i.ToString() + "'");
+             
+                    for (int j = 1; j < myDic[key].Length; ++j)
+                    {
+                        double[] arr = new double[drs.Length];
+                        int k = 0;
+                        try
                         {
-                            string sKey = string.Empty;
-                            string sValid = "[" + order + mark + color + "Valid]";
-                            if (category == "Delta")
+                            foreach (DataRow row in drs)
                             {
-                                if (order == "1")
+                                if (myDic[key][j].Contains("Delta") || myDic[key][j].Contains("Linear"))
                                 {
-                                    sKey = mark + color + category;
+                                    arr[k] = double.Parse(row[myDic[key][j]].ToString()) * 1000000000;
+                                    ++k;
                                 }
+                                else
+                                {
+                                    arr[k] = double.Parse(row[myDic[key][j]].ToString());
+                                    ++k;
+                                }
+                            }
+                            DataRow newRow = dtSum.NewRow();
+                            newRow["WfrNo"] = i;
+                            newRow["AlignShotsQty"] = AlignShotsQty;
+                            newRow["Mark"] = dt.Rows[0]["BasicMarkType"].ToString().Split(new char[] { '-' })[0] + "_" + dt.Rows[0]["MarkVariant"].ToString();
+                            newRow["ValidQty"] = drs.Length;
+                            if (key.Length == 5)
+                            {
+                                newRow["Color"] = "Red"; newRow["Order"] = key.Substring(3, 1); newRow["Orientation"] = key.Substring(4, 1);
+                            }
+                            else if (key.Length == 7)
+                            {
+                                newRow["Color"] = "Green"; newRow["Order"] = key.Substring(5, 1); newRow["Orientation"] = key.Substring(6, 1);
                             }
                             else
                             {
-                                sKey = order + mark + color + category;
+                                newRow["Color"] = "Dynamic"; newRow["Order"] = key.Substring(2, 1); newRow["Orientation"] = key.Substring(3, 1);
                             }
-                            DataRow[] drs = dt.Select(sValid + "='T'");
-                            int j = drs.Length;
-                            SuccessRatio = Math.Round(100.0 * j / WfrQty / AlignShotsQty, 0);
-                            double[] wq = new double[j];
-                            int k = 0;
-                            try
+                            if (myDic[key][j].Contains("WQ"))
                             {
-                                foreach (DataRow row in drs)
-                                {
-                                    if (sKey.EndsWith("Delta"))
-                                    {
-                                        wq[k] = double.Parse(row[sKey].ToString()) * 1000000;
-                                        ++k;
-                                    }
-                                    else
-                                    {
-                                        wq[k] = double.Parse(row[sKey].ToString());
-                                        ++k;
-                                    }
-                                }
-                                DataRow newRow = dtSum.NewRow();
-                                newRow["WfrQty"] = WfrQty;
-                                newRow["AlignShotsQty"] = AlignShotsQty;
-                                newRow["Type"] = sKey;
-                                newRow["ValidShotsQty"] = j;
-                                newRow["SuccessRatio"] = SuccessRatio;
-                                newRow["Order"] = order;
-                                newRow["Mark"] = dt.Rows[0]["BasicMarkType"].ToString() + "_" + dt.Rows[0]["MarkVariant"].ToString();
-                                newRow["Color"] = color;
-                                newRow["Max"] = Math.Round(wq.Max(), 4);
-                                newRow["Min"] = Math.Round(wq.Min(), 4);
-                                newRow["Avg"] = Math.Round(wq.Average(), 4);
-                                newRow["Sigma"] = Math.Round(wq.Variance(), 4);
-
-
-                                dtSum.Rows.Add(newRow);
+                                newRow["Item"] = "WQ";
                             }
-                            catch (Exception ex)
+                            else if (myDic[key][j].Contains("MCC"))
                             {
-                                MessageBox.Show("Error Code:" + ex.Message + "\n\nStep:Summary -->WQ,MCC,DELTA,SHITFT");
+                                newRow["Item"] = "MCC";
                             }
+                            else if (myDic[key][j].Contains("Delta"))
+                            {
+                                newRow["Item"] = "Delta";
+                            }
+                            else
+                            {
+                                newRow["Item"] = "Residual";
+                            }
+                            newRow["Max"] = Math.Round(arr.Max(), 4);
+                            newRow["Min"] = Math.Round(arr.Min(), 4);
+                            newRow["Avg"] = Math.Round(arr.Average(), 4);
+                            newRow["Variance"] = Math.Round(arr.Variance(), 4);
+                            dtSum.Rows.Add(newRow);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error Code:" + ex.Message + "\n\nStep:Summary -->WQ,MCC,DELTA,SHITFT");
                         }
                     }
+                    
                 }
-
-
-
-               
             }
+
+
             return dtSum;
             
         }
-        public static DataTable SumResidual(ref DataTable dt)
+       
+
+        public static DataTable  singleWfrPlot(ref DataTable dt)
         {
-            DataTable sumDt = new DataTable();
-            DataTable dtTmp = dt.DefaultView.ToTable(true, "NomPosX","NomPosY","BasicMarkType");
-            List<double> xx = new List<double>();
-            List<double> xy = new List<double>();
-            List<double> yx = new List<double>();
-            List<double> yy = new List<double>();
-            foreach(DataRow row in dtTmp.Rows)
+            List<string> waferNr = new List<string>();
+            foreach (DataRow row in (dt.DefaultView.ToTable(true, new string[] { "WaferNr" })).Rows)
             {
-                if (row[2].ToString().EndsWith("X"))
-                {
-                    xx.Add(double.Parse(row[0].ToString()));
-                    xy.Add(double.Parse(row[1].ToString()));
-                }
-                else
-                {
-                    yx.Add(double.Parse(row[0].ToString()));
-                    yy.Add(double.Parse(row[1].ToString()));
-                }
-            }
-            double ox = 0;
-            foreach(double x1 in xx)
-            {
-                foreach(double x2 in yx)
-                {
-                    if (ox==0)
-                    {
-                        ox = x1 - x2;
-                    }
-                    else
-                    {
-                        if (Math.Abs(x1-x2)<Math.Abs(ox))
-                        { ox = x1 - x2; }
-                    }
-                }
-            }
-            double oy = 0;
-            foreach (double y1 in xy)
-            {
-                foreach (double y2 in yy)
-                {
-                    if (oy == 0)
-                    {
-                        oy = y1 - y2;
-                    }
-                    else
-                    {
-                        if (Math.Abs(y1 - y2) < Math.Abs(oy))
-                        { oy = y1 - y2; }
-                    }
-                }
+                waferNr.Add(row[0].ToString());               
             }
 
-            foreach(DataRow row in dt.Rows)
+            List<string> xyKey = new List<string>();
+            foreach (DataRow row in (dt.DefaultView.ToTable(true, new string[] { "xyKey" })).Rows)
             {
-                if (row["BasicMarkType"].ToString().EndsWith("-Y"))
+                xyKey.Add(row[0].ToString());
+            }
+
+            DataTable t1 = new DataTable();
+            t1.Columns.Add("WaferNr", typeof(string));
+            t1.Columns.Add("type", typeof(string));
+            t1.Columns.Add("X0", typeof(double));
+            t1.Columns.Add("Y0", typeof(double));
+            t1.Columns.Add("X", typeof(double));
+            t1.Columns.Add("Y", typeof(double));
+
+
+
+            foreach (var wfr in waferNr)
+            {
+                foreach(var key in xyKey)
                 {
-                    row["NomPosX"] = double.Parse(row["NomPosX"].ToString()) + ox;
-                    row["NomPosY"] = double.Parse(row["NomPosY"].ToString()) + oy;
+                    DataRow[] drs = dt.Select("waferNr='" + wfr + "' and xyKey='" + key + "' and (SegmentID='B' or SegmentID='')");
+                    DataRow row = drs[0];
+                    double x0 = double.Parse(row["xyKey"].ToString().Split(new char[] { ',' })[0]) * 1000;
+                    double y0 = double.Parse(row["xyKey"].ToString().Split(new char[] { ',' })[1]) * 1000;
+                    foreach (string str in new string[] { "R5_Measured", "R5_Residual", "G5_Measured", "G5_Residual", "Sm_Measured", "Sm_Residual" })
+                    {
+                        DataRow newRow = t1.NewRow();
+                        newRow["WaferNr"] = row["WaferNr"].ToString();
+                        newRow["X0"] = x0;
+                        newRow["Y0"] = y0;
+                        newRow["type"] = str;
+                        if (str == "R5_Measured")
+                        {
+                            if (row["5XRedValid"].ToString() == "T")
+                            {
+                                newRow["X"] = double.Parse(row["5XRedPos"].ToString()) * 1000;
+                            }
+                            if (row["5YRedValid"].ToString() == "T")
+                            {
+                                newRow["Y"] = double.Parse(row["5YRedPos"].ToString()) * 1000;
+                            }
+                        }
+                        else if (str == "R5_Residual")
+                        {
+                            if (row["5XRedValid"].ToString() == "T")
+                            {
+                                newRow["X"] = double.Parse(row["5XRedLinear"].ToString()) / 1000;
+                            }
+                            if (row["5YRedValid"].ToString() == "T")
+                            {
+                                newRow["Y"] = double.Parse(row["5YRedLinear"].ToString()) / 1000;
+                            }
+                        }
+                        else if (str == "G5_Measured")
+                        {
+                            if (row["5XGreenValid"].ToString() == "T")
+                            { newRow["X"] = double.Parse(row["5XGreenPos"].ToString()) * 1000; }
+                            if (row["5YGreenValid"].ToString() == "T")
+                            { newRow["Y"] = double.Parse(row["5YGreenPos"].ToString()) * 1000; }
+                        }
+                        else if (str == "G5_Residual")
+                        {
+                            if (row["5XGreenValid"].ToString() == "T")
+                            { newRow["X"] = double.Parse(row["5XGreenLinear"].ToString()) / 1000; }
+                            if (row["5YGreenValid"].ToString() == "T")
+                            { newRow["Y"] = double.Parse(row["5YGreenLinear"].ToString()) / 1000; }
+                        }
+                        else if (str == "Sm_Measured")
+                        {
+                            if (row["5XGreenValid"].ToString() == "T" || row["5XRedValid"].ToString() == "T")
+                            { newRow["X"] = double.Parse(row["5XSmPos"].ToString()) * 1000; }
+                            if (row["5YGreenValid"].ToString() == "T" || row["5YRedValid"].ToString() == "T")
+                            { newRow["Y"] = double.Parse(row["5YSmPos"].ToString()) * 1000; }
+                        }
+                        else if (str == "Sm_Residual")
+                        {
+                            if (row["5XGreenValid"].ToString() == "T" || row["5XRedValid"].ToString() == "T")
+                            { newRow["X"] = double.Parse(row["5XSmLinear"].ToString()) / 1000; }
+                            if (row["5YGreenValid"].ToString() == "T" || row["5YRedValid"].ToString() == "T")
+                            { newRow["Y"] = double.Parse(row["5YSmLinear"].ToString()) / 1000; }
+                        }
+                        t1.Rows.Add(newRow);
+                    }
 
                 }
             }
 
 
 
-            return dtTmp;
+
+            
+
+
+
+
+
+
+
+
+
+
+
+           
+
+    
+            return t1;
         }
         #endregion
     }

@@ -3907,7 +3907,15 @@ namespace LithoForm
 
             listDatatable = LithoForm.Asml.VectorData(connStr, str1, str);
 
-            dataGridView1.DataSource = listDatatable[2];
+     
+
+
+
+
+
+
+
+            dataGridView1.DataSource = listDatatable[0];
 
 
 
@@ -4017,19 +4025,26 @@ namespace LithoForm
         private void 步骤一读入数据并拟合5阶信号ToolStripMenuItem_Click(object sender, EventArgs e)
         {        
         string filename;
-            openFileDialog1.InitialDirectory = @"C:\temp\";
-            openFileDialog1.Title = "选择AWE文件";
-            openFileDialog1.Filter = "awe文件(*.awe)|*.awe";//
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                filename = openFileDialog1.FileName.Replace("\\", "\\\\");
-            }
-            else
-            { MessageBox.Show("未选择AWE文件"); return; }
+          //  openFileDialog1.InitialDirectory = @"C:\temp\";
+           // openFileDialog1.Title = "选择AWE文件";
+          //  openFileDialog1.Filter = "awe文件(*.awe)|*.awe";//
+          //  if (openFileDialog1.ShowDialog() == DialogResult.OK)
+          //  {
+          //      filename = openFileDialog1.FileName.Replace("\\", "\\\\");
+          //  }
+          //  else
+          //  { MessageBox.Show("未选择AWE文件"); return; }
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
+
+            filename = "C:\\\\temp\\\\AWFT_CM5W0G.1_0_TO_NAA157_B5.awe";
+            //原始数据
            dt1= LithoForm.Vector.ReadAweFile(filename);
+            dt2 = LithoForm.Vector.SumWqMccDeltaResidual(ref dt1);
+            dataGridView1.DataSource = dt1;
+            //汇总数据
+
             sw.Stop();
             MessageBox.Show("Reading AWE & 5th Order Signal Linear Regression\n\nDONE !\n\n\nTotal Time: " + sw.ElapsedMilliseconds + " msec");
 
@@ -4037,16 +4052,18 @@ namespace LithoForm
 
 
         }
-        private void 步骤二WaferQualitySummaryToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {        
-        dtShow = LithoForm.Vector.SumWqMccDelta(ref dt1);
-            dataGridView1.DataSource = dtShow;
-        }
+ 
 
         private void 步骤二25thOrderResidualToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dtShow = LithoForm.Vector.SumResidual(ref dt1);
-            dataGridView1.DataSource = dt1;
+            dt2.DefaultView.Sort=("Color,Orientation,Item,order");
+            dataGridView1.DataSource = dt2;
+        }
+        private void 步骤三显示矢量图ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //dataGridView1.DataSource = dt1;
+            dtShow = LithoForm.Vector.singleWfrPlot(ref dt1);
+            dataGridView1.DataSource = dtShow;
         }
         #endregion
 
@@ -7886,7 +7903,7 @@ namespace LithoForm
 
         }
 
-      
+   
     }
 
 
