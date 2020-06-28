@@ -1,0 +1,352 @@
+﻿https://www.sqlite.org/inmemorydb.html
+数据库读入内存
+http://www.360doc.com/content/19/0427/09/6889381_831772020.shtml
+listview操作
+https://zhidao.baidu.com/question/84797720.html
+动态生成菜单
+https://blog.csdn.net/a200507002/article/details/73198398?locationNum=6&fps=1
+动态生成菜单实例
+https://blog.csdn.net/qq_27825451/article/details/81305387
+Chart控件解释
+https://blog.csdn.net/jinglong512741/article/details/43058117?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+Chart实例
+https://www.cnblogs.com/arxive/p/5861960.html
+Chart
+https://blog.csdn.net/DannyIsCoder/article/details/70768230
+C# WinForm开发系列之chart控件画折线图和柱形图并自定义鼠标移动到数据标记点显示提示信息
+
+https://www.cnblogs.com/arxive/p/5861960.html
+
+
+https://docs.microsoft.com/zh-cn/dotnet/api/system.windows.forms.datavisualization.charting.chartdashstyle?view=netframework-4.8
+微软官方MENU
+
+https://www.cnblogs.com/arxive/p/5862471.html
+mouse,chart显示数据
+
+https://www.cnblogs.com/AmatVictorialCuram/p/5065584.html
+datagridview 到dt
+
+https://www.cnblogs.com/zhongjieking/p/4024359.html
+https://q.cnblogs.com/q/48462/
+https://www.imooc.com/wenda/detail/396922
+https://bbs.csdn.net/topics/390665250
+Mschart绘制图表之X轴为时间的设置方式
+
+https://bbs.csdn.net/topics/390044210
+
+https://www.cnblogs.com/Betty-IT/p/9198557.html
+
+
+https://jingyan.baidu.com/article/6b97984dfc834e1ca2b0bfd2.html
+Ping
+
+https://www.cnblogs.com/xuxiaona/p/4000344.html
+datatable合并
+
+ https://blog.csdn.net/shan1774965666/article/details/98483275
+ C#将LINQ数据集转换为Datatable, Var Query,datatable join
+
+  //https://blog.csdn.net/qq_42678477/article/details/81660682
+DataTable to SQLite
+
+https://www.cnblogs.com/swtseaman/archive/2011/03/29/1998611.html
+ftp
+
+https://www.cnblogs.com/programsky/p/FTP.html
+ftp delete dir
+
+删除整个目录
+DirectoryInfo directoryInfo = new DirectoryInfo(spath);
+directoryInfo.Delete();
+directoryInfo.Delete(true);
+
+
+
+
+
+
+
+ private void 备份VS2019目录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ///https://blog.csdn.net/qq_21747999/article/details/79151910
+            ///https://www.cnblogs.com/zhaoshujie/p/10612654.html
+
+            MessageBox.Show("共享目录禁用，此命令无效"); return;
+
+
+            System.Diagnostics.Process exep = new System.Diagnostics.Process();
+            exep.StartInfo.FileName = "cmd.exe";
+            // exep.StartInfo.Arguments = "/C XCOPY D:\\GIT\\VS2019 Y:\\Backup\\VS2019 /Y /E /J ";
+            exep.StartInfo.Arguments = "/C XCOPY U:\\VC\\VS2019 Y:\\Backup\\VS2019 /Y /E /J ";
+
+
+
+            exep.StartInfo.UseShellExecute = false;
+            exep.StartInfo.RedirectStandardInput = true;
+            exep.StartInfo.RedirectStandardOutput = true;
+            exep.StartInfo.RedirectStandardError = true;
+            exep.StartInfo.CreateNoWindow = true;
+            exep.Start();
+            string output = exep.StandardOutput.ReadToEnd();
+            exep.WaitForExit();
+            exep.Close();
+            MessageBox.Show(" DOS COMMAND DONE !! \r\n\r\n" + output);
+
+            //exep.StandardInput.AutoFlush = true;
+            //https://bbs.csdn.net/topics/380080340
+            //exep.StandardInput.WriteLine("dir ");
+            //exep.StandardInput.WriteLine("XCOPY U:\\VC\\VS2019 Y:\\VS2019 /Y /E /J ");
+
+
+
+        }
+
+
+
+
+           private void recipeDownloadBackupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            string password = string.Empty;
+            Dictionary<string, string[]> ipUser = new Dictionary<string, string[]>() {
+            { "ALSD82",new string[] {"sys.4666","10.4.152.29" } },
+            { "ALSD83",new string[] {"sys.4730","10.4.151.64" } },
+            { "ALSD85",new string[] {"sys.6450","10.4.152.37" } },
+            { "ALSD86",new string[] {"sys.8144","10.4.152.31" } },
+            { "ALSD87",new string[] {"sys.4142","10.4.152.46" } },
+            { "ALSD89",new string[] {"sys.6158","10.4.152.39" } },
+            { "ALSD8A",new string[] {"sys.5688","10.4.152.42" } },
+            { "ALSD8B",new string[] {"sys.4955","10.4.152.47" } },
+            { "ALSD8C",new string[] {"sys.9726","10.4.152.48" } },
+            { "BLSD7D",new string[] {"sys.8111","10.4.131.32" } },
+            { "BLSD08",new string[] {"sys.3527","10.4.131.63" } },
+            { "SERVER",new string[] {"sys.1725","10.4.72.253" } },
+            };
+            AsmlFtpWeb asmlFtpWeb;
+            string path850 = @"P:\Transfer\850";
+            string path700 = @"P:\Transfer\700";
+            string path850bak = @"P:\Transfer\bak\850";
+            string path700bak = @"P:\Transfer\bak\700";
+            string path850_local = @"D:\shareD\Recipe\PROD850";
+            string path700_local = @"D:\shareD\Recipe\PROD700";
+
+            //get password
+
+            using (StreamReader sr = new StreamReader("P:\\_SQLite\\password.txt", Encoding.UTF8))
+            {
+                while (!sr.EndOfStream)
+                {
+                    password = sr.ReadLine();
+                    break;
+                }
+            }
+            try
+            {
+                //delete all files
+                LibF.DosCommand("del /F /Q " + path850 + "\\*");
+                LibF.DosCommand("del /F /Q " + path700 + "\\*");
+                //输入需要下载的文件
+                string str = Interaction.InputBox("请输入需要下载的程序，用空格分割", "定义产品", "", -1, -1);
+                str = str.Trim().ToUpper();
+                string[] strArr = str.Split(new char[] { ' ' });
+                List<string> downList = new List<string>();
+                foreach (string part in strArr)
+                {
+                    if (part.Length > 0) { downList.Add(part); }
+                }
+                //下载
+                asmlFtpWeb = new AsmlFtpWeb("10.4.72.253", "/usr/asm/data.1725/user_data/jobs/PROD850", "sys.1725", password);
+
+                foreach (string x in downList)
+                {
+                    asmlFtpWeb.Download(path850, x);
+                }
+
+                asmlFtpWeb = new AsmlFtpWeb("10.4.72.253", "/usr/asm/data.1725/user_data/jobs/PROD700", "sys.1725", password);
+
+                foreach (string x in downList)
+                {
+                    asmlFtpWeb.Download(path700, x);
+                }
+                asmlFtpWeb = null;
+                ClearMemory();
+                //列出文件大小，判断文件是否下载成功
+                dtShow = new DataTable();
+                dtShow.Columns.Add("PartName"); dtShow.Columns.Add("PROD850"); dtShow.Columns.Add("PROD700");
+
+                foreach (string part in downList)
+                {
+                    DataRow newRow = dtShow.NewRow();
+                    newRow[0] = part;
+                    FileInfo fileInfo = new FileInfo(path850 + "\\" + part);
+                    if (fileInfo.Length == 0)
+                    {
+                        newRow[1] = "下载失败！";
+                        MessageBox.Show("PROD850/" + part + "：下载失败！！");
+                        fileInfo.Delete();
+                    }
+                    else
+                    {
+                        newRow[1] = "下载成功！ 文件大小：" + fileInfo.Length.ToString();
+                        fileInfo.CopyTo(path850_local + "\\" + fileInfo.Name, true);
+                        fileInfo.CopyTo(path850bak + "\\" + fileInfo.Name, true);
+
+                    }
+
+
+                    fileInfo = new FileInfo(path700 + "\\" + part);
+                    if (fileInfo.Length == 0)
+                    {
+                        newRow[2] = "下载失败！";
+                        MessageBox.Show("PROD700/" + part + "：下载失败！！");
+
+                        fileInfo.Delete();
+                    }
+                    else
+                    {
+                        newRow[2] = "下载成功！ 文件大小：" + fileInfo.Length.ToString();
+                        fileInfo.CopyTo(path700_local + "\\" + fileInfo.Name, true);
+                        fileInfo.CopyTo(path700bak + "\\" + fileInfo.Name, true);
+                    }
+                    dtShow.Rows.Add(newRow);
+
+                }
+                this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+                dataGridView1.DataSource = dtShow;
+            }
+            catch
+            {
+                MessageBox.Show("请确认是否有 \"\\\\10.4.50.16\\photo$\\ppcs\\Transfer\"目录的读写权限");
+            }
+
+            //将文件备份到 /scratch 目录
+
+
+            asmlFtpWeb = new AsmlFtpWeb("10.4.72.253", "/scratch/PROD850", "sys.1725", password);
+            foreach (DataRow row in dtShow.Rows)
+            {
+                if (row[1].ToString().Contains("成功"))
+                {
+                    asmlFtpWeb.Upload(path850 + "\\" + row[0].ToString());
+
+                }
+            }
+            asmlFtpWeb = null;
+
+            asmlFtpWeb = new AsmlFtpWeb("10.4.72.253", "/scratch/PROD700", "sys.1725", password);
+            foreach (DataRow row in dtShow.Rows)
+            {
+                if (row[2].ToString().Contains("成功"))
+                {
+                    asmlFtpWeb.Upload(path700 + "\\" + row[0].ToString());
+                }
+            }
+            asmlFtpWeb = null;
+
+
+
+
+        }
+        private void recipeUploadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string pin = Interaction.InputBox("请输入Pin Number", "", "", -1, -1);
+            pin = pin.Trim();
+            if (pin != "123456")
+            { MessageBox.Show("Pin Number不对，退出"); return; }
+
+            string password = string.Empty;
+            Dictionary<string, string[]> ipUser = new Dictionary<string, string[]>() {
+            { "ALSD82",new string[] {"sys.4666","10.4.152.29" } },
+            { "ALSD83",new string[] {"sys.4730","10.4.151.64" } },
+            { "ALSD85",new string[] {"sys.6450","10.4.152.37" } },
+            { "ALSD86",new string[] {"sys.8144","10.4.152.31" } },
+            { "ALSD87",new string[] {"sys.4142","10.4.152.46" } },
+            { "ALSD89",new string[] {"sys.6158","10.4.152.39" } },
+            { "ALSD8A",new string[] {"sys.5688","10.4.152.42" } },
+            { "ALSD8B",new string[] {"sys.4955","10.4.152.47" } },
+            { "ALSD8C",new string[] {"sys.9726","10.4.152.48" } },
+            { "BLSD7D",new string[] {"sys.8111","10.4.131.32" } },
+            { "BLSD08",new string[] {"sys.3527","10.4.131.63" } },
+            { "SERVER",new string[] {"sys.1725","10.4.72.253" } },
+            };
+            AsmlFtpWeb asmlFtpWeb;
+            bool flag;
+            string path850 = @"P:\Transfer\850";
+            string path700 = @"P:\Transfer\700";
+            string[] tool850 = { "ALSD82", "ALSD83", "ALSD85", "ALSD86", "ALSD87", "ALSD89", "ALSD8A", "ALSD8B", "ALSD8C" };
+            string[] tool700 = { "BLSD7D", "BLSD08" };
+            List<string> list700 = new List<string>();
+            List<string> list850 = new List<string>();
+            dtShow = new DataTable();
+            dtShow.Columns.Add("产品");
+            dtShow.Columns.Add("设备");
+            dtShow.Columns.Add("状态");
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.DataSource = dtShow;
+
+
+            //get password
+
+            using (StreamReader sr = new StreamReader("P:\\_SQLite\\password.txt", Encoding.UTF8))
+            {
+                while (!sr.EndOfStream)
+                { password = sr.ReadLine(); }
+            }
+
+            //get list
+
+            list850 = LibF.ExportFileList(path850, list850);
+            list700 = LibF.ExportFileList(path700, list700);
+
+            //upload
+
+
+
+            foreach (string tool in tool850)
+            {
+                asmlFtpWeb = new AsmlFtpWeb(ipUser[tool][1], "/usr/asm/data." + ipUser[tool][0].Substring(4, 4) + "/user_data/jobs/PROD", ipUser[tool][0], password);
+
+
+
+
+                foreach (string file in list850)
+                {
+                    flag = asmlFtpWeb.Upload(file);
+                    DataRow newRow = dtShow.NewRow();
+                    newRow[0] = file;
+                    newRow[1] = tool;
+                    newRow[2] = flag.ToString();
+                    dtShow.Rows.Add(newRow);
+
+                }
+            }
+
+
+
+
+            foreach (string tool in tool700)
+            {
+                asmlFtpWeb = new AsmlFtpWeb(ipUser[tool][1], "/usr/asm/" + ipUser[tool][0] + "/user_data/jobs/PROD/", ipUser[tool][0], "litho");
+                foreach (string file in list700)
+                {
+                    flag = asmlFtpWeb.Upload(file);
+                    DataRow newRow = dtShow.NewRow();
+                    newRow[0] = file;
+                    newRow[1] = tool;
+                    newRow[2] = flag.ToString();
+                    dtShow.Rows.Add(newRow);
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }

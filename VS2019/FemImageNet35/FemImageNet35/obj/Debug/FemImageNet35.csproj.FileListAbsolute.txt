@@ -1,0 +1,11 @@
+P:\temp\FemImageNet35\FemImageNet35\bin\Debug\FemImageNet35.exe.config
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.csprojAssemblyReference.cache
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.Form1.resources
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.Properties.Resources.resources
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.csproj.GenerateResource.cache
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.csproj.CoreCompileInputs.cache
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\bin\Debug\FemImageNet35.exe.config
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\bin\Debug\FemImageNet35.exe
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\bin\Debug\FemImageNet35.pdb
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.exe
+D:\GIT\VS2019\FemImageNet35\FemImageNet35\obj\Debug\FemImageNet35.pdb

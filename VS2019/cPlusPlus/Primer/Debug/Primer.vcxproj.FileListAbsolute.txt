@@ -1,0 +1,2 @@
+D:\GIT\VS2019\cPlusPlus\Primer\Debug\Primer.exe
+D:\GIT\VS2019\cPlusPlus\Primer\Debug\Primer.pdb
