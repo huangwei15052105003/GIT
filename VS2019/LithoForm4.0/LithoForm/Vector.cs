@@ -1030,78 +1030,40 @@ namespace LithoForm
             t1.Columns.Add("X", typeof(double));
             t1.Columns.Add("Y", typeof(double));
 
+            Dictionary<string, string[]> myDicItem = new Dictionary<string, string[]> {
+                { "R5_Measured" ,new string[]{"5XRedPos","5YRedPos"} },
+                { "R5_Residual" ,new string[]{"5XRedLinear","5YRedLinear"} },
+                {"G5_Measured"  ,new string[]{"5XGreenPos","5YGreenPos"} },
+                {"G5_Residual" ,new string[]{"5XGreenLinear","5YGreenLinear"} },
+                { "Sm_Measured" ,new string[]{"5XSmPos","5YSmPos"} },
+                {"Sm_Residual",new string[]{"5XSmLinear","5YSmLinear"} }
+            };
+
 
 
             foreach (var wfr in waferNr)
             {
-                foreach(var key in xyKey)
+                foreach (var key in xyKey)
                 {
                     DataRow[] drs = dt.Select("waferNr='" + wfr + "' and xyKey='" + key + "' and (SegmentID='B' or SegmentID='')");
-                    DataRow row = drs[0];
-                    double x0 = double.Parse(row["xyKey"].ToString().Split(new char[] { ',' })[0]) * 1000;
-                    double y0 = double.Parse(row["xyKey"].ToString().Split(new char[] { ',' })[1]) * 1000;
                     foreach (string str in new string[] { "R5_Measured", "R5_Residual", "G5_Measured", "G5_Residual", "Sm_Measured", "Sm_Residual" })
                     {
-                        DataRow newRow = t1.NewRow();
-                        newRow["WaferNr"] = row["WaferNr"].ToString();
-                        newRow["X0"] = x0;
-                        newRow["Y0"] = y0;
-                        newRow["type"] = str;
-                        if (str == "R5_Measured")
-                        {
-                            if (row["5XRedValid"].ToString() == "T")
-                            {
-                                newRow["X"] = double.Parse(row["5XRedPos"].ToString()) * 1000;
-                            }
-                            if (row["5YRedValid"].ToString() == "T")
-                            {
-                                newRow["Y"] = double.Parse(row["5YRedPos"].ToString()) * 1000;
-                            }
-                        }
-                        else if (str == "R5_Residual")
-                        {
-                            if (row["5XRedValid"].ToString() == "T")
-                            {
-                                newRow["X"] = double.Parse(row["5XRedLinear"].ToString()) / 1000;
-                            }
-                            if (row["5YRedValid"].ToString() == "T")
-                            {
-                                newRow["Y"] = double.Parse(row["5YRedLinear"].ToString()) / 1000;
-                            }
-                        }
-                        else if (str == "G5_Measured")
-                        {
-                            if (row["5XGreenValid"].ToString() == "T")
-                            { newRow["X"] = double.Parse(row["5XGreenPos"].ToString()) * 1000; }
-                            if (row["5YGreenValid"].ToString() == "T")
-                            { newRow["Y"] = double.Parse(row["5YGreenPos"].ToString()) * 1000; }
-                        }
-                        else if (str == "G5_Residual")
-                        {
-                            if (row["5XGreenValid"].ToString() == "T")
-                            { newRow["X"] = double.Parse(row["5XGreenLinear"].ToString()) / 1000; }
-                            if (row["5YGreenValid"].ToString() == "T")
-                            { newRow["Y"] = double.Parse(row["5YGreenLinear"].ToString()) / 1000; }
-                        }
-                        else if (str == "Sm_Measured")
-                        {
-                            if (row["5XGreenValid"].ToString() == "T" || row["5XRedValid"].ToString() == "T")
-                            { newRow["X"] = double.Parse(row["5XSmPos"].ToString()) * 1000; }
-                            if (row["5YGreenValid"].ToString() == "T" || row["5YRedValid"].ToString() == "T")
-                            { newRow["Y"] = double.Parse(row["5YSmPos"].ToString()) * 1000; }
-                        }
-                        else if (str == "Sm_Residual")
-                        {
-                            if (row["5XGreenValid"].ToString() == "T" || row["5XRedValid"].ToString() == "T")
-                            { newRow["X"] = double.Parse(row["5XSmLinear"].ToString()) / 1000; }
-                            if (row["5YGreenValid"].ToString() == "T" || row["5YRedValid"].ToString() == "T")
-                            { newRow["Y"] = double.Parse(row["5YSmLinear"].ToString()) / 1000; }
-                        }
-                        t1.Rows.Add(newRow);
+                        DataRow r = t1.NewRow();
+                        r["WaferNr"] = wfr;
+                        r["X0"] = double.Parse(key.Split(new char[] { ',' })[0]) * 1000;
+                        r["Y0"]= double.Parse(key.Split(new char[] { ',' })[1]) * 1000;
+                        r["X"] = double.Parse(drs[0][myDicItem[str][0]].ToString()) * 1000;
+                        r["Y"]= double.Parse(drs[1][myDicItem[str][1]].ToString()) * 1000;
+                        r["type"] = str;
+                        t1.Rows.Add(r);
+
                     }
+
 
                 }
             }
+               
+         
 
 
 

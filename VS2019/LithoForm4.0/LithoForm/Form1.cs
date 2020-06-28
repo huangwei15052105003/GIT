@@ -4042,7 +4042,7 @@ namespace LithoForm
             //原始数据
            dt1= LithoForm.Vector.ReadAweFile(filename);
             dt2 = LithoForm.Vector.SumWqMccDeltaResidual(ref dt1);
-            dataGridView1.DataSource = dt1;
+           // dataGridView1.DataSource = dt1;
             //汇总数据
 
             sw.Stop();
