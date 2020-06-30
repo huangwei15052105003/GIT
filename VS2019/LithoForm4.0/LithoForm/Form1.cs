@@ -3915,8 +3915,12 @@ namespace LithoForm
 
 
 
-            dataGridView1.DataSource = listDatatable[0];
-
+           // dataGridView1.DataSource = listDatatable[0];
+           // MessageBox.Show("001");
+           // dataGridView1.DataSource = listDatatable[1];
+           // MessageBox.Show("002");
+           // dataGridView1.DataSource = listDatatable[2];
+           // MessageBox.Show("003");
 
 
             //抽出wferid至列表框中，供后续选中作图；https://blog.csdn.net/qq_28249373/article/details/74905884
@@ -4042,7 +4046,7 @@ namespace LithoForm
             //原始数据
             dt1 = LithoForm.Vector.ReadAweFile(filename);
             dt2 = LithoForm.Vector.SumWqMccDeltaResidual(ref dt1);
-            dataGridView1.DataSource = dt1;
+            //dataGridView1.DataSource = dt1;
             //汇总数据
 
             sw.Stop();
@@ -4062,8 +4066,66 @@ namespace LithoForm
         private void 步骤三显示矢量图ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //dataGridView1.DataSource = dt1;
-            dtShow = LithoForm.Vector.singleWfrPlot(ref dt1);
-            dataGridView1.DataSource = dtShow;
+            listDatatable.Clear();
+            listDatatable = LithoForm.Vector.singleWfrPlot(ref dt1);
+
+            dataGridView1.DataSource = listDatatable[1];
+                dataGridView2.DataSource = listDatatable[0];
+
+          
+            if("CopyFromOld"=="CopyFromOld")
+            {
+
+                //抽出wferid至列表框中，供后续选中作图；https://blog.csdn.net/qq_28249373/article/details/74905884
+                wfrIdBox.Items.Clear();
+                int count = 0;
+
+                List<string> list = new List<string>();
+                foreach (DataRow row in (listDatatable[0].DefaultView.ToTable(true, new string[] { "WaferNr" })).Rows)
+                {
+                    this.wfrIdBox.Items.Add(row[0].ToString());
+                    list.Add(row[0].ToString());
+                    wfrIdBox.SetItemChecked(count, true);
+                    count += 1;
+                }
+
+
+                 List<string> typeList = new List<string>();
+                for (int i = 0; i < vectorTypeList.Items.Count; i++)
+                {
+
+                    typeList.Add(vectorTypeList.GetItemText(vectorTypeList.Items[i].ToString()));
+
+                }
+
+                List<string> wqmccList = new List<string>();
+                wqmccList.Add("X_RedWQ5");
+
+                LithoForm.Vector.PlotAsmlVectorNew(list, typeList, wqmccList, listDatatable, zoom, zoom1);
+                pictureBox1.Image = null;
+                try
+                {
+                    //若直接引用，同名文件修改后无法正常显示；
+                    FileStream fs = new FileStream("C:\\temp\\Vector.emf", FileMode.Open, FileAccess.Read);
+                    pictureBox1.Image = Image.FromStream(fs);
+                    fs.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("文件显示失败");
+                }
+                this.tabControl1.SelectedIndex = 1;
+
+            }
+
+
+
+
+
+
+
+
+
         }
         #endregion
 
