@@ -1122,7 +1122,7 @@ namespace LithoForm
                 
                 foreach(DataRow row in dt.Rows)
                 {
-                   
+
                     if (row["BasicMarkType"].ToString().EndsWith("-X"))
                     {
                         if (row["SegmentID"].ToString() == "")
@@ -1161,16 +1161,17 @@ namespace LithoForm
                         }
 
                         List<string> l = new List<string> { "", "", "", "", "", "", "", "", "", "" };
-                        if(row["SegmentID"].ToString()=="A")
+                        if (row["SegmentID"].ToString() == "A")
                         {
                             if (row["1XRedValid"].ToString() == "T")
                             {
-                                newRow["RedMCC1"] = row["1XRedMCC"].ToString();
-                                newRow["RedWQ1"] = row["1XRedWQ"].ToString();
-                                newRow["RedDelta"] = row["XRedDelta"];
+                                l[0] = row["1XRedMCC"].ToString();
+                                l[1] = row["1XRedWQ"].ToString();
+                                l[2] = row["XRedDelta"].ToString();
                             }
+                            ==
                         }
-                        
+
                     }
 
 
