@@ -1,3 +1,5 @@
 restore single file
 git reset commit_id filename
 git checkout filename
+
+SourceTree：do not use Putty, use SSH 
