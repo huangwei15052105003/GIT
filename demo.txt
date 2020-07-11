@@ -3,3 +3,5 @@ git reset commit_id filename
 git checkout filename
 
 SourceTree：do not use Putty, use SSH 
+
+using clone to setup local GIT folder
