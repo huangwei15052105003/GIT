@@ -1,0 +1,9 @@
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\bin\Debug\TimerSample.exe
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\bin\Debug\TimerSample.pdb
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\Ex09_60.Form1.resources
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.Properties.Resources.resources
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.exe
+C:\Users\huang\Desktop\TimerSample\down.liehuo.net\TimerSample\Ex09_60\obj\Debug\TimerSample.pdb

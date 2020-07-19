@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF79E9D5-794B-4870-8839-7F4DAD307A2E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>star</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>star</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.ReportSource.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.Shared.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BA\BA010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA\BA020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA\BA030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA\BA040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA\BA050.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA\BA060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsMain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsMain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IN\IN010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IN\IN010SE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IN\IN020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IN\IN030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PR010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PR010SE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PR011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PR030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PR040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\PRO20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\BasicRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\MasterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\SimpleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\Single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\IN020.cs">
+      <DependentUpon>IN020.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\IN030.cs">
+      <DependentUpon>IN030.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\PR020.cs">
+      <DependentUpon>PR020.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\PR030.cs">
+      <DependentUpon>PR030.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\PRO40.cs">
+      <DependentUpon>PRO40.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\SA020.cs">
+      <DependentUpon>SA020.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\SA030.cs">
+      <DependentUpon>SA030.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RP\SA040.cs">
+      <DependentUpon>SA040.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SA\SA010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SA\SA010SE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SA\SA011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SA\SA020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SA\SA030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SA\SA040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="DsMain.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsMain.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="IN\IN020DS.XML" />
+    <Content Include="PR\RP020DS.XML" />
+    <Content Include="PR\RP030DS.XML" />
+    <Content Include="SA\SA020DS.xml" />
+    <Content Include="SA\SA030DS.XML" />
+    <EmbeddedResource Include="BA\BA010.resx">
+      <DependentUpon>BA010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA\BA020.resx">
+      <DependentUpon>BA020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA\BA030.resx">
+      <DependentUpon>BA030.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA\BA040.resx">
+      <DependentUpon>BA040.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA\BA050.resx">
+      <DependentUpon>BA050.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA\BA060.resx">
+      <DependentUpon>BA060.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IN\IN010.resx">
+      <DependentUpon>IN010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IN\IN010SE.resx">
+      <DependentUpon>IN010SE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IN\IN020.resx">
+      <DependentUpon>IN020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IN\IN030.resx">
+      <DependentUpon>IN030.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\PR010.resx">
+      <DependentUpon>PR010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\PR010SE.resx">
+      <DependentUpon>PR010SE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\PR011.resx">
+      <DependentUpon>PR011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\PR030.resx">
+      <DependentUpon>PR030.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\PRO20.resx">
+      <DependentUpon>PRO20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\BaseDialog.resx">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\BasicRP.resx">
+      <DependentUpon>BasicRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\MasterDetail.resx">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\simple.resx">
+      <DependentUpon>simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\SimpleList.resx">
+      <DependentUpon>SimpleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Single.resx">
+      <DependentUpon>Single.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\IN020.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IN020.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\IN030.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IN030.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PR020.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR020.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PR030.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR030.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PRO40.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRO40.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\SA020.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SA020.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\SA030.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SA030.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\SA040.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SA040.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SA\SA010.resx">
+      <DependentUpon>SA010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SA\SA010SE.resx">
+      <DependentUpon>SA010SE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SA\SA011.resx">
+      <DependentUpon>SA011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SA\SA020.resx">
+      <DependentUpon>SA020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DsMain.xsx">
+      <DependentUpon>DsMain.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

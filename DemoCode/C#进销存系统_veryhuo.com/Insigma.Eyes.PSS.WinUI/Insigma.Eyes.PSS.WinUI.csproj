@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8B46836-6EA4-4658-AAB8-F6C2A8464693}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insigma.Eyes.PSS.WinUI</RootNamespace>
+    <AssemblyName>Insigma.Eyes.PSS.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppParams.cs" />
+    <Compile Include="Controls\AddCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddCommodity.designer.cs">
+      <DependentUpon>AddCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddPurchaseCommodities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddPurchaseCommodities.Designer.cs">
+      <DependentUpon>AddPurchaseCommodities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddPurchaseOrder.Designer.cs">
+      <DependentUpon>AddPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddSalesCommodities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddSalesCommodities.Designer.cs">
+      <DependentUpon>AddSalesCommodities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddSalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddSalesOrder.Designer.cs">
+      <DependentUpon>AddSalesOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Purchase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Purchase.designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Sales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Sales.designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectCommodity.Designer.cs">
+      <DependentUpon>SelectCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadControls.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BLLCommodity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLLPurchaseOrders\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLLSalesOrders\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLLUsers\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WCFServiceBLL.cs" />
+    <EmbeddedResource Include="Controls\AddCommodity.resx">
+      <DependentUpon>AddCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddPurchaseCommodities.resx">
+      <DependentUpon>AddPurchaseCommodities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddPurchaseOrder.resx">
+      <DependentUpon>AddPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddSalesCommodities.resx">
+      <DependentUpon>AddSalesCommodities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddSalesOrder.resx">
+      <DependentUpon>AddSalesOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectCommodity.resx">
+      <DependentUpon>SelectCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.CommodityModel.datasource" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.PurchaseCommodityModel.datasource" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.PurchaseOrdersModel.datasource" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.SalesCommodityModel.datasource" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.SalesOrdersModel.datasource" />
+    <None Include="Properties\DataSources\Insigma.Eyes.PSS.Model.UserModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\BLLCommodity\CommodityManagerService1.wsdl" />
+    <None Include="Service References\BLLCommodity\CommodityManagerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLCommodity\CommodityManagerService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLCommodity\CommodityManagerService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLCommodity\CommodityManagerService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService1.wsdl" />
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLSalesOrders\SalesManagerService1.wsdl" />
+    <None Include="Service References\BLLSalesOrders\SalesManagerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLSalesOrders\SalesManagerService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLSalesOrders\SalesManagerService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLSalesOrders\SalesManagerService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLUsers\UserManagerService1.wsdl" />
+    <None Include="Service References\BLLUsers\UserManagerService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLUsers\UserManagerService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLLUsers\UserManagerService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BLLCommodity\" />
+    <WCFMetadataStorage Include="Service References\BLLPurchaseOrders\" />
+    <WCFMetadataStorage Include="Service References\BLLSalesOrders\" />
+    <WCFMetadataStorage Include="Service References\BLLUsers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLCommodity\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLCommodity\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLCommodity\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLSalesOrders\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLSalesOrders\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLSalesOrders\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insigma.Eyes.PSS.BLLWCFService\Insigma.Eyes.PSS.BLLWCFService.csproj">
+      <Project>{D853EAC5-5D9F-4AA6-9AD7-4AB258AF06B5}</Project>
+      <Name>Insigma.Eyes.PSS.BLLWCFService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insigma.Eyes.PSS.Model\Insigma.Eyes.PSS.Model.csproj">
+      <Project>{43D38EB2-84AE-451B-954E-DB7E6F457AD4}</Project>
+      <Name>Insigma.Eyes.PSS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLUsers\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLUsers\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLUsers\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLPurchaseOrders\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLPurchaseOrders\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLPurchaseOrders\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLUsers\UserManagerService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLCommodity\CommodityManagerService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLPurchaseOrders\PurchaseManagerService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLLSalesOrders\SalesManagerService1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

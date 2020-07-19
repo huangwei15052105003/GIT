@@ -1,0 +1,9 @@
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\bin\Debug\AvertFormDie.exe
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\bin\Debug\AvertFormDie.pdb
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.Frm_Main.resources
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.Properties.Resources.resources
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.exe
+C:\Users\huang\Desktop\srcfans.com\AvertFormDie\AvertFormDie\obj\Debug\AvertFormDie.pdb

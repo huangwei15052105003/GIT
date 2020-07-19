@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterMIS", "MasterMIS\MasterMIS.csproj", "{D404C15C-ED99-4FA8-AACA-0E8C51A2D24F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D404C15C-ED99-4FA8-AACA-0E8C51A2D24F}.Debug.ActiveCfg = Debug|.NET
+		{D404C15C-ED99-4FA8-AACA-0E8C51A2D24F}.Debug.Build.0 = Debug|.NET
+		{D404C15C-ED99-4FA8-AACA-0E8C51A2D24F}.Release.ActiveCfg = Release|.NET
+		{D404C15C-ED99-4FA8-AACA-0E8C51A2D24F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

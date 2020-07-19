@@ -1,0 +1,9 @@
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\bin\Debug\CreateStatusStrip.exe
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\bin\Debug\CreateStatusStrip.pdb
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.Form1.resources
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.Properties.Resources.resources
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.exe
+C:\Users\huang\Desktop\CreateStatusStrip\CreateStatusStrip\obj\Debug\CreateStatusStrip.pdb

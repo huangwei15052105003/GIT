@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase3", "DataBase3.csproj", "{5347AB37-D587-46C9-A955-2D2E2213544E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5347AB37-D587-46C9-A955-2D2E2213544E}.Debug.ActiveCfg = Debug|.NET
+		{5347AB37-D587-46C9-A955-2D2E2213544E}.Debug.Build.0 = Debug|.NET
+		{5347AB37-D587-46C9-A955-2D2E2213544E}.Release.ActiveCfg = Release|.NET
+		{5347AB37-D587-46C9-A955-2D2E2213544E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

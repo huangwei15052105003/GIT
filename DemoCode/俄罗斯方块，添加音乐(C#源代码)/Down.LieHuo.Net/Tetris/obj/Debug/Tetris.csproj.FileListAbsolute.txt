@@ -1,0 +1,15 @@
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\bin\Debug\Tetris.exe
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\bin\Debug\Tetris.pdb
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\bin\Debug\Interop.WMPLib.dll
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Interop.WMPLib.dll
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.csproj.ResolveComReference.cache
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.FrmMode.resources
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.Properties.Resources.resources
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.FrmTetris.resources
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.exe
+C:\Users\huang\Desktop\俄罗斯方块，添加音乐(C#源代码)\Down.LieHuo.Net\Tetris\obj\Debug\Tetris.pdb

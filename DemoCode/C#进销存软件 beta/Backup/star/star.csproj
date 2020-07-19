@@ -1,0 +1,572 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{FF79E9D5-794B-4870-8839-7F4DAD307A2E}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "star"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "star"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\..\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DsMain.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsMain.cs"
+                />
+                <File
+                    RelPath = "DsMain.cs"
+                    DependentUpon = "DsMain.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsMain.xsx"
+                    DependentUpon = "DsMain.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "test.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "test.resx"
+                    DependentUpon = "test.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA010.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA010.resx"
+                    DependentUpon = "BA010.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA020.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA020.resx"
+                    DependentUpon = "BA020.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA030.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA030.resx"
+                    DependentUpon = "BA030.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA040.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA040.resx"
+                    DependentUpon = "BA040.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA050.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA050.resx"
+                    DependentUpon = "BA050.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BA\BA060.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BA\BA060.resx"
+                    DependentUpon = "BA060.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IN\IN010.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IN\IN010.resx"
+                    DependentUpon = "IN010.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IN\IN010SE.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IN\IN010SE.resx"
+                    DependentUpon = "IN010SE.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IN\IN020.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IN\IN020.resx"
+                    DependentUpon = "IN020.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "IN\IN020DS.XML"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "IN\IN030.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IN\IN030.resx"
+                    DependentUpon = "IN030.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\PR010.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PR010.resx"
+                    DependentUpon = "PR010.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\PR010SE.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PR010SE.resx"
+                    DependentUpon = "PR010SE.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\PR011.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PR011.resx"
+                    DependentUpon = "PR011.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\PR030.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PR030.resx"
+                    DependentUpon = "PR030.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\PR040.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PRO20.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PR\PRO20.resx"
+                    DependentUpon = "PRO20.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PR\RP020DS.XML"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PR\RP030DS.XML"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Public\BaseDialog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\BaseDialog.resx"
+                    DependentUpon = "BaseDialog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Public\BasicRP.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\BasicRP.resx"
+                    DependentUpon = "BasicRP.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Public\MasterDetail.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\MasterDetail.resx"
+                    DependentUpon = "MasterDetail.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Public\simple.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\simple.resx"
+                    DependentUpon = "simple.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Public\SimpleList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\SimpleList.resx"
+                    DependentUpon = "SimpleList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Public\Single.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Public\Single.resx"
+                    DependentUpon = "Single.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "RP\IN020.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "IN020.cs"
+                />
+                <File
+                    RelPath = "RP\IN020.cs"
+                    DependentUpon = "IN020.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\IN030.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "IN030.cs"
+                />
+                <File
+                    RelPath = "RP\IN030.cs"
+                    DependentUpon = "IN030.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\PR020.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "PR020.cs"
+                />
+                <File
+                    RelPath = "RP\PR020.cs"
+                    DependentUpon = "PR020.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\PR030.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "PR030.cs"
+                />
+                <File
+                    RelPath = "RP\PR030.cs"
+                    DependentUpon = "PR030.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\PRO40.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "PRO40.cs"
+                />
+                <File
+                    RelPath = "RP\PRO40.cs"
+                    DependentUpon = "PRO40.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\SA020.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "SA020.cs"
+                />
+                <File
+                    RelPath = "RP\SA020.cs"
+                    DependentUpon = "SA020.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\SA030.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "SA030.cs"
+                />
+                <File
+                    RelPath = "RP\SA030.cs"
+                    DependentUpon = "SA030.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "RP\SA040.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "SA040.cs"
+                />
+                <File
+                    RelPath = "RP\SA040.cs"
+                    DependentUpon = "SA040.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "SA\SA010.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SA\SA010.resx"
+                    DependentUpon = "SA010.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SA\SA010SE.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SA\SA010SE.resx"
+                    DependentUpon = "SA010SE.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SA\SA011.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SA\SA011.resx"
+                    DependentUpon = "SA011.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SA\SA020.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SA\SA020.resx"
+                    DependentUpon = "SA020.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SA\SA020DS.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SA\SA030.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SA\SA030DS.XML"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SA\SA040.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

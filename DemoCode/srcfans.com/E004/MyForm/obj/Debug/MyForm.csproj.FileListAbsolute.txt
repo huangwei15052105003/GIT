@@ -1,0 +1,8 @@
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\bin\Debug\MyForm.exe
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\bin\Debug\MyForm.pdb
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\MyForm.Form1.resources
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\MyForm.Properties.Resources.resources
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\MyForm.csproj.GenerateResource.Cache
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\MyForm.exe
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Debug\MyForm.pdb

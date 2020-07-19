@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0714f5a9-f819-43ff-97d8-c50834fe0140" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2253/CommodityManagerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommodityManagerService4.xsd" MetadataType="Schema" ID="0162d3d0-e3bd-4658-bf03-172690d77170" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommodityManagerService41.xsd" MetadataType="Schema" ID="b30a5e5c-2196-4af3-be60-24cea877a392" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CommodityManagerService42.xsd" MetadataType="Schema" ID="c699d2e5-1d5c-4edc-bcc1-e638f781cef2" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommodityManagerService43.xsd" MetadataType="Schema" ID="d3d169f9-c2f1-4c40-9271-0454f5e3ae54" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CommodityManagerService1.wsdl" MetadataType="Wsdl" ID="272fd8fc-c92d-4488-bb44-35bf16d24174" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?wsdl" />
+    <MetadataFile FileName="CommodityManagerService1.disco" MetadataType="Disco" ID="5a1f0c5c-3a54-4721-a94b-cd75dfabd4bb" SourceId="1" SourceUrl="http://localhost:2253/CommodityManagerService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

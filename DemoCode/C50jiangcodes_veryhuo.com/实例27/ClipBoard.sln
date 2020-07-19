@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipBoard", "ClipBoard.csproj", "{8343C4DA-9C0D-4F62-93BC-F1201ED036C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8343C4DA-9C0D-4F62-93BC-F1201ED036C1}.Debug.ActiveCfg = Debug|.NET
+		{8343C4DA-9C0D-4F62-93BC-F1201ED036C1}.Debug.Build.0 = Debug|.NET
+		{8343C4DA-9C0D-4F62-93BC-F1201ED036C1}.Release.ActiveCfg = Release|.NET
+		{8343C4DA-9C0D-4F62-93BC-F1201ED036C1}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

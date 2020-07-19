@@ -1,0 +1,263 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5506B004-B144-47F7-BB05-D1DB753A7F35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EquipmentMS</RootNamespace>
+    <AssemblyName>EquipmentMS</AssemblyName>
+    <ApplicationIcon>exe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass\DataBase.cs" />
+    <Compile Include="BaseClass\Operation.cs" />
+    <Compile Include="BaseInfo\frmBaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\frmBaseInfo.Designer.cs">
+      <DependentUpon>frmBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\frmBaseNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\frmBaseNumber.Designer.cs">
+      <DependentUpon>frmBaseNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\frmBaseSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\frmBaseSort.Designer.cs">
+      <DependentUpon>frmBaseSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInfo\frmDataGridViewSetVisible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfo\frmDataGridViewSetVisible.Designer.cs">
+      <DependentUpon>frmDataGridViewSetVisible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManage\frmBakDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManage\frmBakDataBase.Designer.cs">
+      <DependentUpon>frmBakDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManage\frmNewSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataManage\frmNewSystem.Designer.cs">
+      <DependentUpon>frmNewSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\frmEquimentSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment\frmEquimentSum.Designer.cs">
+      <DependentUpon>frmEquimentSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentClear.Designer.cs">
+      <DependentUpon>frmEquipmentClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentClearFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentClearFind.Designer.cs">
+      <DependentUpon>frmEquipmentClearFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentInsert.Designer.cs">
+      <DependentUpon>frmEquipmentInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment\frmEquipmentUpdate.Designer.cs">
+      <DependentUpon>frmEquipmentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseInfo\frmBaseInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\frmBaseNumber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\frmBaseSort.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInfo\frmDataGridViewSetVisible.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataGridViewSetVisible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManage\frmBakDataBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBakDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManage\frmNewSystem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNewSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\frmEquimentSum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEquimentSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\frmEquipmentClear.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEquipmentClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\frmEquipmentClearFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEquipmentClearFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\frmEquipmentInsert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEquipmentInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\frmEquipmentUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEquipmentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSet\frmUnits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSet\frmUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bakDataBase\db_EquipmentMS.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SystemSet\frmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSet\frmUnits.Designer.cs">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSet\frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSet\frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\db_EquipmentMS_Data.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBase\db_EquipmentMS_Log.LDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="exe.ico" />
+    <Content Include="ICON\172.ico" />
+    <Content Include="ICON\42.ico" />
+    <Content Include="ICON\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IMAGES\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

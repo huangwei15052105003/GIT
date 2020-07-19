@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SalesManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2253/SalesManagerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2253/SalesManagerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:2253/SalesManagerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2253/SalesManagerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Insigma.Eyes.PSS.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISalesManagerService_GetSalesOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalesOrders" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetSalesOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalesOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetSalesOrders_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetSalesCommoditiesByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalesCommoditiesByID" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetSalesCommoditiesByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSalesCommoditiesByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_AddSalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_AddSalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_UpdateCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_UpdateCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_UpdateCommodity_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System" name="detail" element="q2:Exception" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetOneSalesCommodityByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneSalesCommodityByID" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetOneSalesCommodityByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneSalesCommodityByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_AddSalesCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_AddSalesCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteSalesCommoditiesBySalesOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalesCommoditiesBySalesOrderID" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteSalesCommoditiesBySalesOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalesCommoditiesBySalesOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_UpdateSalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_UpdateSalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_PostSalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostSalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_PostSalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_PostSalesOrder_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System" name="detail" element="q3:Exception" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetOneSalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneSalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_GetOneSalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteSalesCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalesCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteSalesCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSalesCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderID" />
+  </wsdl:message>
+  <wsdl:message name="ISalesManagerService_DeleteOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISalesManagerService">
+    <wsdl:operation name="GetSalesOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/GetSalesOrders" message="tns:ISalesManagerService_GetSalesOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/GetSalesOrdersResponse" message="tns:ISalesManagerService_GetSalesOrders_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISalesManagerService/GetSalesOrdersExceptionFault" name="ExceptionFault" message="tns:ISalesManagerService_GetSalesOrders_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesCommoditiesByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/GetSalesCommoditiesByID" message="tns:ISalesManagerService_GetSalesCommoditiesByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/GetSalesCommoditiesByIDResponse" message="tns:ISalesManagerService_GetSalesCommoditiesByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/AddSalesOrder" message="tns:ISalesManagerService_AddSalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/AddSalesOrderResponse" message="tns:ISalesManagerService_AddSalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/UpdateCommodity" message="tns:ISalesManagerService_UpdateCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/UpdateCommodityResponse" message="tns:ISalesManagerService_UpdateCommodity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISalesManagerService/UpdateCommodityExceptionFault" name="ExceptionFault" message="tns:ISalesManagerService_UpdateCommodity_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneSalesCommodityByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/GetOneSalesCommodityByID" message="tns:ISalesManagerService_GetOneSalesCommodityByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/GetOneSalesCommodityByIDResponse" message="tns:ISalesManagerService_GetOneSalesCommodityByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/AddSalesCommodity" message="tns:ISalesManagerService_AddSalesCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/AddSalesCommodityResponse" message="tns:ISalesManagerService_AddSalesCommodity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalesCommoditiesBySalesOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteSalesCommoditiesBySalesOrderID" message="tns:ISalesManagerService_DeleteSalesCommoditiesBySalesOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteSalesCommoditiesBySalesOrderIDResponse" message="tns:ISalesManagerService_DeleteSalesCommoditiesBySalesOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/UpdateSalesOrder" message="tns:ISalesManagerService_UpdateSalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/UpdateSalesOrderResponse" message="tns:ISalesManagerService_UpdateSalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/PostSalesOrder" message="tns:ISalesManagerService_PostSalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/PostSalesOrderResponse" message="tns:ISalesManagerService_PostSalesOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISalesManagerService/PostSalesOrderExceptionFault" name="ExceptionFault" message="tns:ISalesManagerService_PostSalesOrder_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/GetOneSalesOrder" message="tns:ISalesManagerService_GetOneSalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/GetOneSalesOrderResponse" message="tns:ISalesManagerService_GetOneSalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalesCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteSalesCommodity" message="tns:ISalesManagerService_DeleteSalesCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteSalesCommodityResponse" message="tns:ISalesManagerService_DeleteSalesCommodity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteOrderID" message="tns:ISalesManagerService_DeleteOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesManagerService/DeleteOrderIDResponse" message="tns:ISalesManagerService_DeleteOrderID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISalesManagerService" type="tns:ISalesManagerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSalesOrders">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/GetSalesOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesCommoditiesByID">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/GetSalesCommoditiesByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/AddSalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommodity">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/UpdateCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneSalesCommodityByID">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/GetOneSalesCommodityByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesCommodity">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/AddSalesCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalesCommoditiesBySalesOrderID">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/DeleteSalesCommoditiesBySalesOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/UpdateSalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostSalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/PostSalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneSalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/GetOneSalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSalesCommodity">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/DeleteSalesCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderID">
+      <soap:operation soapAction="http://tempuri.org/ISalesManagerService/DeleteOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SalesManagerService">
+    <wsdl:port name="BasicHttpBinding_ISalesManagerService" binding="tns:BasicHttpBinding_ISalesManagerService">
+      <soap:address location="http://localhost:2253/SalesManagerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

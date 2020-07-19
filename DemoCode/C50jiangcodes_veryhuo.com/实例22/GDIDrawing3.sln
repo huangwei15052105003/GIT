@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDIDrawing3", "GDIDrawing3.csproj", "{BB699B7F-D348-497D-975D-7D0709953A5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BB699B7F-D348-497D-975D-7D0709953A5F}.Debug.ActiveCfg = Debug|.NET
+		{BB699B7F-D348-497D-975D-7D0709953A5F}.Debug.Build.0 = Debug|.NET
+		{BB699B7F-D348-497D-975D-7D0709953A5F}.Release.ActiveCfg = Release|.NET
+		{BB699B7F-D348-497D-975D-7D0709953A5F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Insigma.Eyes.PSS.BLLWCFService.PurchaseManagerService" CodeBehind="PurchaseManagerService.svc.cs" %>

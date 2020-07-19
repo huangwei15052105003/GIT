@@ -1,0 +1,9 @@
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\bin\Debug\Case08_14.exe
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\bin\Debug\Case08_14.pdb
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.Form1.resources
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.Properties.Resources.resources
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.exe
+C:\Users\huang\Desktop\csharpgetinfo\down.liehuo.net\C#探测系统信息\Case08_14\obj\Debug\Case08_14.pdb

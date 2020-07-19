@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCustomControl", "TestCustomControl.csproj", "{269A451C-F3FF-4233-9110-DD4658792F74}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{269A451C-F3FF-4233-9110-DD4658792F74}.Debug.ActiveCfg = Debug|.NET
+		{269A451C-F3FF-4233-9110-DD4658792F74}.Debug.Build.0 = Debug|.NET
+		{269A451C-F3FF-4233-9110-DD4658792F74}.Release.ActiveCfg = Release|.NET
+		{269A451C-F3FF-4233-9110-DD4658792F74}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

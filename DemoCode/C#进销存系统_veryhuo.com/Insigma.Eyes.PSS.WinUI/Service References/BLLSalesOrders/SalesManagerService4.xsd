@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Insigma.Eyes.PSS.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Insigma.Eyes.PSS.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSalesOrdersModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesOrdersModel" nillable="true" type="tns:SalesOrdersModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesOrdersModel" nillable="true" type="tns:ArrayOfSalesOrdersModel" />
+  <xs:complexType name="SalesOrdersModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contract" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesOrdersModel" nillable="true" type="tns:SalesOrdersModel" />
+  <xs:complexType name="ArrayOfSalesCommodityModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesCommodityModel" nillable="true" type="tns:SalesCommodityModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesCommodityModel" nillable="true" type="tns:ArrayOfSalesCommodityModel" />
+  <xs:complexType name="SalesCommodityModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CommodityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CommodityInventory" type="xs:int" />
+      <xs:element minOccurs="0" name="CommodityManufacturer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommodityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommodityType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommodityUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommodityUnitPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Count" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SalesOrderID" type="xs:int" />
+      <xs:element minOccurs="0" name="SalesPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesCommodityModel" nillable="true" type="tns:SalesCommodityModel" />
+</xs:schema>

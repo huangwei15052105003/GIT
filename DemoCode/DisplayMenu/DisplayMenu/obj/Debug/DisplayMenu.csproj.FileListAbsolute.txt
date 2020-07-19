@@ -1,0 +1,11 @@
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\bin\Debug\DisplayMenu.exe.config
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\bin\Debug\DisplayMenu.exe
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\bin\Debug\DisplayMenu.pdb
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.Frm_Main.resources
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.Form2.resources
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.Properties.Resources.resources
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.exe
+C:\Users\huang\Desktop\srcfans.com\DisplayMenu\DisplayMenu\obj\Debug\DisplayMenu.pdb

@@ -1,0 +1,10 @@
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\Interop.VBIDE.dll
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.csproj.ResolveComReference.cache
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.Form1.resources
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.exe
+C:\Users\huang\Desktop\codesc.net\把Excel数据读入ListView\obj\Debug\ExcelReader.pdb

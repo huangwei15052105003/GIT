@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" ?>
+<MESSAGES>
+   <MESSAGE id="101">
+      <TO>张三</TO>
+      <FROM>赵大</FROM>
+      <DATE>2002/10/1</DATE>
+      <SUBJECT>询问？</SUBJECT>
+      <BODY>十一去什么地方玩？</BODY>
+   </MESSAGE>
+   <MESSAGE id="109">
+      <TO>张三</TO>
+      <FROM>钱二</FROM>
+      <DATE>2002/11/5</DATE>
+      <SUBJECT>Help！</SUBJECT>
+      <BODY>我的计算机中了病毒了，你快来帮忙！</BODY>
+   </MESSAGE>
+   <MESSAGE id="123">
+      <TO>张三</TO>
+      <FROM>王五</FROM>
+      <DATE>2002/12/25</DATE>
+      <SUBJECT>Re：吃饭</SUBJECT>
+      <BODY>谢谢你的好意，但是我们公司有活动，不能来你们家吃饭了，很遗憾，希望你们能玩的开心！</BODY>
+   </MESSAGE>
+</MESSAGES>

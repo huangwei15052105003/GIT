@@ -1,0 +1,4 @@
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Common\bin\Debug\Insigma.Eyes.PSS.Common.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Common\bin\Debug\Insigma.Eyes.PSS.Common.pdb
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Common\obj\Debug\Insigma.Eyes.PSS.Common.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Common\obj\Debug\Insigma.Eyes.PSS.Common.pdb

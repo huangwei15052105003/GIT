@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDemoLib", "CDemoLib.csproj", "{8B535CC2-B665-47F2-8DFD-14A697E35AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDemoTest", "..\CDemoTest\CDemoTest.csproj", "{4E3F6D70-7A02-4DA4-A838-12ED590A9BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8B535CC2-B665-47F2-8DFD-14A697E35AA5}.Debug.ActiveCfg = Debug|.NET
+		{8B535CC2-B665-47F2-8DFD-14A697E35AA5}.Debug.Build.0 = Debug|.NET
+		{8B535CC2-B665-47F2-8DFD-14A697E35AA5}.Release.ActiveCfg = Release|.NET
+		{8B535CC2-B665-47F2-8DFD-14A697E35AA5}.Release.Build.0 = Release|.NET
+		{4E3F6D70-7A02-4DA4-A838-12ED590A9BFF}.Debug.ActiveCfg = Debug|.NET
+		{4E3F6D70-7A02-4DA4-A838-12ED590A9BFF}.Debug.Build.0 = Debug|.NET
+		{4E3F6D70-7A02-4DA4-A838-12ED590A9BFF}.Release.ActiveCfg = Release|.NET
+		{4E3F6D70-7A02-4DA4-A838-12ED590A9BFF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

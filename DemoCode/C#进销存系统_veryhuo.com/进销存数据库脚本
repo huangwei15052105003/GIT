@@ -1,0 +1,456 @@
+按我博客上那样添加表空间和注册用户 密码 再把下面的复制到Command Window即可
+
+
+
+----------------------------------------------
+-- Export file for user INVOICING           --
+-- Created by thinkpad on 2012/8/3, 4:54:07 --
+----------------------------------------------
+
+spool 进销存数据库脚本.log
+
+prompt
+prompt Creating table COMMODITY
+prompt ========================
+prompt
+create table INVOICING.COMMODITY
+(
+  id           NUMBER not null,
+  name         VARCHAR2(30),
+  type         VARCHAR2(20),
+  manufacturer VARCHAR2(50),
+  inventory    NUMBER,
+  unitprice    NUMBER(18,2),
+  unit         VARCHAR2(10)
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on table INVOICING.COMMODITY
+  is '商品信息表';
+comment on column INVOICING.COMMODITY.name
+  is '产品名称';
+comment on column INVOICING.COMMODITY.type
+  is '产品型号';
+comment on column INVOICING.COMMODITY.manufacturer
+  is '生产厂家';
+comment on column INVOICING.COMMODITY.inventory
+  is '库存';
+comment on column INVOICING.COMMODITY.unitprice
+  is '参考单价，销售和进货不一定是这个价格';
+comment on column INVOICING.COMMODITY.unit
+  is '单位';
+alter table INVOICING.COMMODITY
+  add constraint PK_COMMODITY_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table CUSTOMER
+prompt =======================
+prompt
+create table INVOICING.CUSTOMER
+(
+  id     NUMBER not null,
+  name   NVARCHAR2(32),
+  phone  NVARCHAR2(12),
+  remark NVARCHAR2(256)
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table INVOICING.CUSTOMER
+  add constraint PK_CUSTOMER_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table PURCHASECOMMODITY
+prompt ================================
+prompt
+create table INVOICING.PURCHASECOMMODITY
+(
+  id              NUMBER not null,
+  purchaseorderid NUMBER,
+  commodityid     NUMBER,
+  count           NUMBER,
+  purchaseprice   NUMBER(18,2),
+  totalprice      NUMBER(18,2)
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on column INVOICING.PURCHASECOMMODITY.purchaseorderid
+  is '采购订单ID';
+comment on column INVOICING.PURCHASECOMMODITY.commodityid
+  is '商品ID';
+comment on column INVOICING.PURCHASECOMMODITY.count
+  is '采购数量';
+comment on column INVOICING.PURCHASECOMMODITY.purchaseprice
+  is '采购单价';
+comment on column INVOICING.PURCHASECOMMODITY.totalprice
+  is '总金额';
+alter table INVOICING.PURCHASECOMMODITY
+  add constraint PK_PURCHASECOMMODITY_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table PURCHASEORDERS
+prompt =============================
+prompt
+create table INVOICING.PURCHASEORDERS
+(
+  id           NUMBER not null,
+  ordernumber  VARCHAR2(20),
+  suppliername VARCHAR2(20),
+  tel          VARCHAR2(20),
+  address      VARCHAR2(50),
+  contract     VARCHAR2(200),
+  status       VARCHAR2(10),
+  orderdate    DATE
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on table INVOICING.PURCHASEORDERS
+  is '采购订单';
+comment on column INVOICING.PURCHASEORDERS.ordernumber
+  is '订单编号，根据时间来生成';
+comment on column INVOICING.PURCHASEORDERS.suppliername
+  is '供应商名称';
+comment on column INVOICING.PURCHASEORDERS.tel
+  is '联系电话';
+comment on column INVOICING.PURCHASEORDERS.address
+  is '厂家地址';
+comment on column INVOICING.PURCHASEORDERS.contract
+  is '供货合同信息';
+comment on column INVOICING.PURCHASEORDERS.status
+  is '订单状态，已入库，未入库';
+comment on column INVOICING.PURCHASEORDERS.orderdate
+  is '订单时间';
+alter table INVOICING.PURCHASEORDERS
+  add constraint PK_PURCHASEORDERS_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table SALESCOMMODITY
+prompt =============================
+prompt
+create table INVOICING.SALESCOMMODITY
+(
+  id           NUMBER not null,
+  salesorderid NUMBER,
+  commodityid  NUMBER,
+  count        NUMBER,
+  salesprice   NUMBER(18,2),
+  totalprice   NUMBER(18,2)
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on table INVOICING.SALESCOMMODITY
+  is '销售商品信息';
+comment on column INVOICING.SALESCOMMODITY.salesorderid
+  is '销售订单ID';
+comment on column INVOICING.SALESCOMMODITY.commodityid
+  is '商品ID';
+comment on column INVOICING.SALESCOMMODITY.count
+  is '销售数量';
+comment on column INVOICING.SALESCOMMODITY.salesprice
+  is '销售价格';
+comment on column INVOICING.SALESCOMMODITY.totalprice
+  is '总金额';
+alter table INVOICING.SALESCOMMODITY
+  add constraint PK_SALESCOMMODITY_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table SALESORDERS
+prompt ==========================
+prompt
+create table INVOICING.SALESORDERS
+(
+  id           NUMBER not null,
+  ordernumber  VARCHAR2(20),
+  customername VARCHAR2(20),
+  tel          VARCHAR2(20),
+  address      VARCHAR2(50),
+  contract     VARCHAR2(200),
+  status       VARCHAR2(10),
+  orderdate    DATE
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on table INVOICING.SALESORDERS
+  is '销售订单';
+comment on column INVOICING.SALESORDERS.ordernumber
+  is '订单编号';
+comment on column INVOICING.SALESORDERS.customername
+  is '客户名称';
+comment on column INVOICING.SALESORDERS.tel
+  is '联系电话';
+comment on column INVOICING.SALESORDERS.address
+  is '送货地址';
+comment on column INVOICING.SALESORDERS.contract
+  is '合同信息';
+comment on column INVOICING.SALESORDERS.status
+  is '订单状态，已出库，未出库';
+comment on column INVOICING.SALESORDERS.orderdate
+  is '订单时间';
+alter table INVOICING.SALESORDERS
+  add constraint PK_SALESORDERS_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating table USERS
+prompt ====================
+prompt
+create table INVOICING.USERS
+(
+  id       NUMBER not null,
+  username VARCHAR2(20),
+  password VARCHAR2(20),
+  role     NUMBER
+)
+tablespace INVOICING
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on table INVOICING.USERS
+  is '用户信息表';
+comment on column INVOICING.USERS.role
+  is '角色，0=管理员，1=采购员，2=销售员，3=库存管理员';
+alter table INVOICING.USERS
+  add constraint PK_USERS_ID primary key (ID)
+  using index 
+  tablespace INVOICING
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+prompt
+prompt Creating sequence S_COMMODITY
+prompt =============================
+prompt
+create sequence INVOICING.S_COMMODITY
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 71
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_CUSTOMER
+prompt ============================
+prompt
+create sequence INVOICING.S_CUSTOMER
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 21
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_PURCHASECOMMODITY
+prompt =====================================
+prompt
+create sequence INVOICING.S_PURCHASECOMMODITY
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 101
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_PURCHASEORDERS
+prompt ==================================
+prompt
+create sequence INVOICING.S_PURCHASEORDERS
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 41
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_SALESCOMMODITY
+prompt ==================================
+prompt
+create sequence INVOICING.S_SALESCOMMODITY
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 121
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_SALESORDERS
+prompt ===============================
+prompt
+create sequence INVOICING.S_SALESORDERS
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 41
+increment by 1
+cache 20;
+
+prompt
+prompt Creating sequence S_USERS
+prompt =========================
+prompt
+create sequence INVOICING.S_USERS
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 1
+increment by 1
+cache 20;
+
+prompt
+prompt Creating view V_PURCHASECOMMODITY
+prompt =================================
+prompt
+create or replace view invoicing.v_purchasecommodity as
+select pc.id,pc.purchaseorderid,pc.commodityid,c.name CommodityName,
+c.type commodityType,c.manufacturer CommodityManufacturer,c.inventory CommodityInventory,
+c.unitprice CommodityUnitPrice,c.unit CommodityUnit,pc.count,pc.purchaseprice,pc.totalprice
+from purchasecommodity pc inner join commodity c on pc.commodityid = c.id;
+
+prompt
+prompt Creating view V_SALESCOMMODITY
+prompt ==============================
+prompt
+create or replace view invoicing.v_salescommodity as
+select sc.id,sc.salesorderid,sc.commodityid,c.name CommodityName,
+c.type commodityType,c.manufacturer CommodityManufacturer,c.inventory CommodityInventory,
+c.unitprice CommodityUnitPrice,c.unit CommodityUnit,sc.count,sc.salesprice,sc.totalprice
+from salescommodity sc inner join commodity c on sc.commodityid = c.id;
+
+
+spool off

@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="T_TDD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KSH" type="xs:string" minOccurs="0" />
+              <xs:element name="ZKZH" type="xs:string" minOccurs="0" />
+              <xs:element name="XM" type="xs:string" minOccurs="0" />
+              <xs:element name="XBDM" type="xs:string" minOccurs="0" />
+              <xs:element name="MZDM" type="xs:string" minOccurs="0" />
+              <xs:element name="ZZMMDM" type="xs:string" minOccurs="0" />
+              <xs:element name="CSRQ" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GZRQ" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BYRQ" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BYXX" type="xs:string" minOccurs="0" />
+              <xs:element name="WYYZDM" type="xs:string" minOccurs="0" />
+              <xs:element name="ZSLBDM" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYLBDM" type="xs:string" minOccurs="0" />
+              <xs:element name="WHCDDM" type="xs:string" minOccurs="0" />
+              <xs:element name="KSTZBZ" type="xs:string" minOccurs="0" />
+              <xs:element name="SFZH" type="xs:string" minOccurs="0" />
+              <xs:element name="YZBM" type="xs:string" minOccurs="0" />
+              <xs:element name="LXDH" type="xs:string" minOccurs="0" />
+              <xs:element name="TXDZ" type="xs:string" minOccurs="0" />
+              <xs:element name="XZQHDM" type="xs:string" minOccurs="0" />
+              <xs:element name="BH" type="xs:double" minOccurs="0" />
+              <xs:element name="KSLSCZBZ" type="xs:string" minOccurs="0" />
+              <xs:element name="TDZYH" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH1" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH2" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH3" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH4" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH5" type="xs:string" minOccurs="0" />
+              <xs:element name="ZYDH6" type="xs:string" minOccurs="0" />
+              <xs:element name="FCZYTJ" type="xs:string" minOccurs="0" />
+              <xs:element name="FFDY" type="xs:string" minOccurs="0" />
+              <xs:element name="SFZLTD" type="xs:string" minOccurs="0" />
+              <xs:element name="CJX01" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX02" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX03" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX04" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX05" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX06" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX07" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX08" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX10" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX11" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX12" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX13" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX14" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX15" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX16" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX17" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX18" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX19" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX31" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX32" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX34" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX35" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX36" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX50" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX51" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX52" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX53" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX91" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX92" type="xs:double" minOccurs="0" />
+              <xs:element name="CJX93" type="xs:double" minOccurs="0" />
+              <xs:element name="ZF" type="xs:double" minOccurs="0" />
+              <xs:element name="PXZF" type="xs:double" minOccurs="0" />
+              <xs:element name="CCDM" type="xs:string" minOccurs="0" />
+              <xs:element name="TDZYSXDM" type="xs:string" minOccurs="0" />
+              <xs:element name="BKZYSXDM" type="xs:string" minOccurs="0" />
+              <xs:element name="TDFS" type="xs:string" minOccurs="0" />
+              <xs:element name="TDZYDM" type="xs:string" minOccurs="0" />
+              <xs:element name="LQYXDM" type="xs:string" minOccurs="0" />
+              <xs:element name="LQCCDM" type="xs:string" minOccurs="0" />
+              <xs:element name="LQZYSXDM" type="xs:string" minOccurs="0" />
+              <xs:element name="LQZY" type="xs:string" minOccurs="0" />
+              <xs:element name="TDYYDM" type="xs:string" minOccurs="0" />
+              <xs:element name="KSZT" type="xs:string" minOccurs="0" />
+              <xs:element name="TDCS" type="xs:double" minOccurs="0" />
+              <xs:element name="BZ" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="a1" type="xs:string" />
+              <xs:element name="a2" type="xs:string" />
+              <xs:element name="a3" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

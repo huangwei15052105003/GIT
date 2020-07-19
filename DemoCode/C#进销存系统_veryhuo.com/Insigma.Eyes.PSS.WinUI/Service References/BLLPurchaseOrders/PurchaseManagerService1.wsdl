@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PurchaseManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2253/PurchaseManagerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2253/PurchaseManagerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:2253/PurchaseManagerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2253/PurchaseManagerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Insigma.Eyes.PSS.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPurchaseManagerService_GetPurchaseOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseOrders" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetPurchaseOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetPurchaseOrders_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetPurchaseCommoditiesByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseCommoditiesByID" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetPurchaseCommoditiesByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseCommoditiesByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetOnePurchaseCommoditiesByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnePurchaseCommoditiesByID" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetOnePurchaseCommoditiesByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnePurchaseCommoditiesByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_UpdatePurchaseCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchaseCommodity" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_UpdatePurchaseCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchaseCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_UpdatePurchaseCommodity_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System" name="detail" element="q2:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_AddPurchaseCommodityModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseCommodityModel" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_AddPurchaseCommodityModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseCommodityModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_PostPurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_PostPurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_PostPurchaseOrder_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System" name="detail" element="q3:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetOnePurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnePurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetOnePurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOnePurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_GetOnePurchaseOrder_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/System" name="detail" element="q4:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeletePurchaseCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchaseCommodity" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeletePurchaseCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchaseCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_AddPurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_AddPurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_UpdatePurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_UpdatePurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeletePurchaseCommoditiesByPurchaseOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchaseCommoditiesByPurchaseOrderID" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeletePurchaseCommoditiesByPurchaseOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchaseCommoditiesByPurchaseOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeleteOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderID" />
+  </wsdl:message>
+  <wsdl:message name="IPurchaseManagerService_DeleteOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPurchaseManagerService">
+    <wsdl:operation name="GetPurchaseOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetPurchaseOrders" message="tns:IPurchaseManagerService_GetPurchaseOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetPurchaseOrdersResponse" message="tns:IPurchaseManagerService_GetPurchaseOrders_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetPurchaseOrdersExceptionFault" name="ExceptionFault" message="tns:IPurchaseManagerService_GetPurchaseOrders_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseCommoditiesByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetPurchaseCommoditiesByID" message="tns:IPurchaseManagerService_GetPurchaseCommoditiesByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetPurchaseCommoditiesByIDResponse" message="tns:IPurchaseManagerService_GetPurchaseCommoditiesByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnePurchaseCommoditiesByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseCommoditiesByID" message="tns:IPurchaseManagerService_GetOnePurchaseCommoditiesByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseCommoditiesByIDResponse" message="tns:IPurchaseManagerService_GetOnePurchaseCommoditiesByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseCommodity" message="tns:IPurchaseManagerService_UpdatePurchaseCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseCommodityResponse" message="tns:IPurchaseManagerService_UpdatePurchaseCommodity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseCommodityExceptionFault" name="ExceptionFault" message="tns:IPurchaseManagerService_UpdatePurchaseCommodity_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseCommodityModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/AddPurchaseCommodityModel" message="tns:IPurchaseManagerService_AddPurchaseCommodityModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/AddPurchaseCommodityModelResponse" message="tns:IPurchaseManagerService_AddPurchaseCommodityModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostPurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/PostPurchaseOrder" message="tns:IPurchaseManagerService_PostPurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/PostPurchaseOrderResponse" message="tns:IPurchaseManagerService_PostPurchaseOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPurchaseManagerService/PostPurchaseOrderExceptionFault" name="ExceptionFault" message="tns:IPurchaseManagerService_PostPurchaseOrder_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOnePurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseOrder" message="tns:IPurchaseManagerService_GetOnePurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseOrderResponse" message="tns:IPurchaseManagerService_GetOnePurchaseOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseOrderExceptionFault" name="ExceptionFault" message="tns:IPurchaseManagerService_GetOnePurchaseOrder_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePurchaseCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommodity" message="tns:IPurchaseManagerService_DeletePurchaseCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommodityResponse" message="tns:IPurchaseManagerService_DeletePurchaseCommodity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/AddPurchaseOrder" message="tns:IPurchaseManagerService_AddPurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/AddPurchaseOrderResponse" message="tns:IPurchaseManagerService_AddPurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseOrder" message="tns:IPurchaseManagerService_UpdatePurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseOrderResponse" message="tns:IPurchaseManagerService_UpdatePurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePurchaseCommoditiesByPurchaseOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommoditiesByPurchaseOrderID" message="tns:IPurchaseManagerService_DeletePurchaseCommoditiesByPurchaseOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommoditiesByPurchaseOrderIDResponse" message="tns:IPurchaseManagerService_DeletePurchaseCommoditiesByPurchaseOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeleteOrderID" message="tns:IPurchaseManagerService_DeleteOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPurchaseManagerService/DeleteOrderIDResponse" message="tns:IPurchaseManagerService_DeleteOrderID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPurchaseManagerService" type="tns:IPurchaseManagerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPurchaseOrders">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/GetPurchaseOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseCommoditiesByID">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/GetPurchaseCommoditiesByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnePurchaseCommoditiesByID">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseCommoditiesByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseCommodity">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseCommodityModel">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/AddPurchaseCommodityModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/PostPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOnePurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/GetOnePurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePurchaseCommodity">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/AddPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/UpdatePurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePurchaseCommoditiesByPurchaseOrderID">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/DeletePurchaseCommoditiesByPurchaseOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderID">
+      <soap:operation soapAction="http://tempuri.org/IPurchaseManagerService/DeleteOrderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PurchaseManagerService">
+    <wsdl:port name="BasicHttpBinding_IPurchaseManagerService" binding="tns:BasicHttpBinding_IPurchaseManagerService">
+      <soap:address location="http://localhost:2253/PurchaseManagerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

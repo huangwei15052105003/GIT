@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsControlLibrary", "WindowsControlLibrary.csproj", "{C96B76AA-FDAA-489E-8395-3690905F4D20}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Debug.ActiveCfg = Debug|.NET
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Debug.Build.0 = Debug|.NET
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Release.ActiveCfg = Release|.NET
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

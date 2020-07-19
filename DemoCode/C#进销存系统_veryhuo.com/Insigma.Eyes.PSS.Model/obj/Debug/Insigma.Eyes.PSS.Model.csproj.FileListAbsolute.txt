@@ -1,0 +1,10 @@
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Model\bin\Debug\Insigma.Eyes.PSS.Model.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Model\bin\Debug\Insigma.Eyes.PSS.Model.pdb
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.pdb
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\bin\Debug\Insigma.Eyes.PSS.Model.dll
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\bin\Debug\Insigma.Eyes.PSS.Model.pdb
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.dll
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.PSS.Model\obj\Debug\Insigma.Eyes.PSS.Model.pdb

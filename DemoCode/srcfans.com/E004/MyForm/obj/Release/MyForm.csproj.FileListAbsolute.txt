@@ -1,0 +1,27 @@
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\bin\Release\MyForm.exe
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\bin\Release\MyForm.pdb
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\ResolveAssemblyReference.cache
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\MyForm.Form1.resources
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\MyForm.Properties.Resources.resources
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\MyForm.csproj.GenerateResource.Cache
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\MyForm.exe
+D:\Documents and Settings\luobin\My Documents\Visual Studio 2008\Projects\MyForm\MyForm\obj\Release\MyForm.pdb
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\MyForm.exe
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\MyForm.pdb
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\bin\Release\MyForm.exe
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\bin\Release\MyForm.pdb
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\ResolveAssemblyReference.cache
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\MyForm.Form1.resources
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\MyForm.Properties.Resources.resources
+G:\Visual C# 2008 编程技巧大全\MyForm\MyForm\obj\Release\MyForm.csproj.GenerateResource.Cache
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.exe
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.pdb
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\bin\Release\MyForm.exe
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\bin\Release\MyForm.pdb
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\ResolveAssemblyReference.cache
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.Form1.resources
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.Properties.Resources.resources
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.csproj.GenerateResource.Cache
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\bin\Release\Interop.Scripting.dll
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\Interop.Scripting.dll
+F:\Visual C# 2008 编程技巧大全\第3章 文件管理编程技巧E\E004\MyForm\obj\Release\MyForm.csproj.ResolveComReference.cache

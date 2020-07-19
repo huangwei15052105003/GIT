@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此文件由 XML 架构设计器自动生成。它包含设计器表面组件的布局信息。-->
+<XSDDesignerLayout layoutVersion="1" viewPortLeft="0" viewPortTop="0">
+    <book_XmlElement left="635" top="635" width="4233" height="2625" selected="0" zOrder="0" index="0" />
+    <user_XmlElement left="6138" top="635" width="4233" height="2625" selected="0" zOrder="2" index="1" />
+    <userbook_XmlKeyref left="5302" top="4371" width="402" height="402" selected="0" zOrder="4" />
+</XSDDesignerLayout>

@@ -1,0 +1,9 @@
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\bin\Debug\ClassCompositor.exe
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\bin\Debug\ClassCompositor.pdb
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.FormMain.resources
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.Properties.Resources.resources
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.exe
+C:\Users\huang\Desktop\C#-ClassCompositor模拟排课\liehuo.net\ClassCompositor\obj\Debug\ClassCompositor.pdb

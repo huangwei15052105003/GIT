@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTestWebService", "WinTestWebService.csproj", "{4494B01F-8A86-45E6-BDF8-FB7C3538E08D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4494B01F-8A86-45E6-BDF8-FB7C3538E08D}.Debug.ActiveCfg = Debug|.NET
+		{4494B01F-8A86-45E6-BDF8-FB7C3538E08D}.Debug.Build.0 = Debug|.NET
+		{4494B01F-8A86-45E6-BDF8-FB7C3538E08D}.Release.ActiveCfg = Release|.NET
+		{4494B01F-8A86-45E6-BDF8-FB7C3538E08D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

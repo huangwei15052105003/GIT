@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CommodityManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2253/CommodityManagerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2253/CommodityManagerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:2253/CommodityManagerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2253/CommodityManagerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Insigma.Eyes.PSS.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICommodityManagerService_GetCommodities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommodities" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetCommodities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommoditiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetCommodities_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetCommoditiesByCondition_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommoditiesByCondition" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetCommoditiesByCondition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommoditiesByConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetOneCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_GetOneCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_AddCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_AddCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_AddCommodity_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System" name="detail" element="q2:Exception" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_UpdateCommodity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCommodity" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_UpdateCommodity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCommodityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommodityManagerService_UpdateCommodity_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System" name="detail" element="q3:Exception" />
+  </wsdl:message>
+  <wsdl:portType name="ICommodityManagerService">
+    <wsdl:operation name="GetCommodities">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommodityManagerService/GetCommodities" message="tns:ICommodityManagerService_GetCommodities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommodityManagerService/GetCommoditiesResponse" message="tns:ICommodityManagerService_GetCommodities_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICommodityManagerService/GetCommoditiesExceptionFault" name="ExceptionFault" message="tns:ICommodityManagerService_GetCommodities_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommoditiesByCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommodityManagerService/GetCommoditiesByCondition" message="tns:ICommodityManagerService_GetCommoditiesByCondition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommodityManagerService/GetCommoditiesByConditionResponse" message="tns:ICommodityManagerService_GetCommoditiesByCondition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommodityManagerService/GetOneCommodity" message="tns:ICommodityManagerService_GetOneCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommodityManagerService/GetOneCommodityResponse" message="tns:ICommodityManagerService_GetOneCommodity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommodityManagerService/AddCommodity" message="tns:ICommodityManagerService_AddCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommodityManagerService/AddCommodityResponse" message="tns:ICommodityManagerService_AddCommodity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICommodityManagerService/AddCommodityExceptionFault" name="ExceptionFault" message="tns:ICommodityManagerService_AddCommodity_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommodity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommodityManagerService/UpdateCommodity" message="tns:ICommodityManagerService_UpdateCommodity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommodityManagerService/UpdateCommodityResponse" message="tns:ICommodityManagerService_UpdateCommodity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICommodityManagerService/UpdateCommodityExceptionFault" name="ExceptionFault" message="tns:ICommodityManagerService_UpdateCommodity_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICommodityManagerService" type="tns:ICommodityManagerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCommodities">
+      <soap:operation soapAction="http://tempuri.org/ICommodityManagerService/GetCommodities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommoditiesByCondition">
+      <soap:operation soapAction="http://tempuri.org/ICommodityManagerService/GetCommoditiesByCondition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneCommodity">
+      <soap:operation soapAction="http://tempuri.org/ICommodityManagerService/GetOneCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommodity">
+      <soap:operation soapAction="http://tempuri.org/ICommodityManagerService/AddCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommodity">
+      <soap:operation soapAction="http://tempuri.org/ICommodityManagerService/UpdateCommodity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommodityManagerService">
+    <wsdl:port name="BasicHttpBinding_ICommodityManagerService" binding="tns:BasicHttpBinding_ICommodityManagerService">
+      <soap:address location="http://localhost:2253/CommodityManagerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

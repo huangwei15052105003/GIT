@@ -1,0 +1,5 @@
+E:\CheckOnWork\sgCheckOnWork\sgClass\bin\Debug\sgClass.dll
+E:\CheckOnWork\sgCheckOnWork\sgClass\bin\Debug\sgClass.pdb
+E:\CheckOnWork\sgCheckOnWork\sgClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CheckOnWork\sgCheckOnWork\sgClass\obj\Debug\sgClass.dll
+E:\CheckOnWork\sgCheckOnWork\sgClass\obj\Debug\sgClass.pdb

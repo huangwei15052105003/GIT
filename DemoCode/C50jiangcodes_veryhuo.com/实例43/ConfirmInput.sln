@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfirmInput", "http://localhost/ConfirmInput/ConfirmInput.csproj", "{0B6FEBE3-0156-4326-BB6E-8E4363F4F668}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0B6FEBE3-0156-4326-BB6E-8E4363F4F668}.Debug.ActiveCfg = Debug|.NET
+		{0B6FEBE3-0156-4326-BB6E-8E4363F4F668}.Debug.Build.0 = Debug|.NET
+		{0B6FEBE3-0156-4326-BB6E-8E4363F4F668}.Release.ActiveCfg = Release|.NET
+		{0B6FEBE3-0156-4326-BB6E-8E4363F4F668}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="sales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stor_id" type="xs:string" />
+              <xs:element name="ord_num" type="xs:string" />
+              <xs:element name="ord_date" type="xs:dateTime" />
+              <xs:element name="qty" type="xs:short" />
+              <xs:element name="payterms" type="xs:string" />
+              <xs:element name="title_id" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:sales" />
+      <xs:field xpath="mstns:stor_id" />
+      <xs:field xpath="mstns:ord_num" />
+      <xs:field xpath="mstns:title_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

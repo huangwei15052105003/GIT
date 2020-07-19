@@ -1,0 +1,23 @@
+<Address_Table>
+  <address>
+    <name>dongdong</name>
+    <Email>dongdong@163.com</Email>
+    <mobile>13912345678</mobile>
+    <phone>67681234</phone>
+    <home>XiTu City Road No.23</home>
+  </address>
+  <address>
+    <name>xixi</name>
+    <Email>xixi@21.cn</Email>
+    <mobile>13812345678</mobile>
+    <phone>81234567</phone>
+    <home>TaiLan Mansion No.1008 Room</home>
+  </address>
+  <address>
+    <name>chai</name>
+    <Email>cf@263.net</Email>
+    <mobile>13109876543</mobile>
+    <phone>98768765</phone>
+    <home>MaiLei Road No.8</home>
+  </address>
+</Address_Table>

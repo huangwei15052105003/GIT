@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplet", "TestApplet.csproj", "{3DD6844B-986A-4E71-AF59-04B34B1D20FF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3DD6844B-986A-4E71-AF59-04B34B1D20FF}.Debug.ActiveCfg = Debug|.NET
+		{3DD6844B-986A-4E71-AF59-04B34B1D20FF}.Debug.Build.0 = Debug|.NET
+		{3DD6844B-986A-4E71-AF59-04B34B1D20FF}.Release.ActiveCfg = Release|.NET
+		{3DD6844B-986A-4E71-AF59-04B34B1D20FF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.IDAL.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.IDAL.pdb
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.Model.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.Model.pdb
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.csprojResolveAssemblyReference.cache
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.dll
+H:\进销存系统\Insigma.Eyes.PSS\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.pdb
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.IDAL.dll
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.IDAL.pdb
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.Model.dll
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\bin\Debug\Insigma.Eyes.PSS.Model.pdb
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.csproj.CopyComplete
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.dll
+C:\Users\huang\Desktop\C#进销存系统_veryhuo.com\Insigma.Eyes.IDAL\obj\Debug\Insigma.Eyes.PSS.IDAL.pdb

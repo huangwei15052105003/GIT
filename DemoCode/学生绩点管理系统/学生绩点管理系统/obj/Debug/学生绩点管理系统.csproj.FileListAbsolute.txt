@@ -1,0 +1,17 @@
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\bin\Debug\学生绩点管理系统.exe.config
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\bin\Debug\学生绩点管理系统.exe
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\bin\Debug\学生绩点管理系统.pdb
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.csprojAssemblyReference.cache
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form1.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form2.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form3.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form4.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form5.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form6.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form7.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Form8.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.Properties.Resources.resources
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.csproj.GenerateResource.cache
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.csproj.CoreCompileInputs.cache
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.exe
+C:\Users\huang\Desktop\学生绩点管理系统\down.liehuo.net\学生绩点管理系统\学生绩点管理系统\obj\Debug\学生绩点管理系统.pdb

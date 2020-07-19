@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://localhost/Distribute" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:i0="http://www.tempuri.org/DataSet1.xsd" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://localhost/Distribute" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import namespace="http://www.tempuri.org/DataSet1.xsd" location="http://localhost/distribute/Service1.asmx?schema=DataSet1" />
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/Distribute">
+      <s:import namespace="http://www.tempuri.org/DataSet1.xsd" />
+      <s:element name="GetData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://www.tempuri.org/DataSet1.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://www.tempuri.org/DataSet1.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://www.tempuri.org/DataSet1.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet1" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any namespace="http://www.tempuri.org/DataSet1.xsd" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="GetDataSoapIn">
+    <part name="parameters" element="s0:GetData" />
+  </message>
+  <message name="GetDataSoapOut">
+    <part name="parameters" element="s0:GetDataResponse" />
+  </message>
+  <message name="UpdateDataSoapIn">
+    <part name="parameters" element="s0:UpdateData" />
+  </message>
+  <message name="UpdateDataSoapOut">
+    <part name="parameters" element="s0:UpdateDataResponse" />
+  </message>
+  <message name="GetDataHttpGetIn" />
+  <message name="GetDataHttpGetOut">
+    <part name="Body" element="s0:DataSet1" />
+  </message>
+  <message name="GetDataHttpPostIn" />
+  <message name="GetDataHttpPostOut">
+    <part name="Body" element="s0:DataSet1" />
+  </message>
+  <portType name="Service1Soap">
+    <operation name="GetData">
+      <input message="s0:GetDataSoapIn" />
+      <output message="s0:GetDataSoapOut" />
+    </operation>
+    <operation name="UpdateData">
+      <input message="s0:UpdateDataSoapIn" />
+      <output message="s0:UpdateDataSoapOut" />
+    </operation>
+  </portType>
+  <portType name="Service1HttpGet">
+    <operation name="GetData">
+      <input message="s0:GetDataHttpGetIn" />
+      <output message="s0:GetDataHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="Service1HttpPost">
+    <operation name="GetData">
+      <input message="s0:GetDataHttpPostIn" />
+      <output message="s0:GetDataHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="Service1Soap" type="s0:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetData">
+      <soap:operation soapAction="http://localhost/Distribute/GetData" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateData">
+      <soap:operation soapAction="http://localhost/Distribute/UpdateData" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="Service1HttpGet" type="s0:Service1HttpGet">
+    <http:binding verb="GET" />
+    <operation name="GetData">
+      <http:operation location="/GetData" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="Service1HttpPost" type="s0:Service1HttpPost">
+    <http:binding verb="POST" />
+    <operation name="GetData">
+      <http:operation location="/GetData" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Service1">
+    <documentation>分布式应用程序。</documentation>
+    <port name="Service1Soap" binding="s0:Service1Soap">
+      <soap:address location="http://localhost/distribute/Service1.asmx" />
+    </port>
+    <port name="Service1HttpGet" binding="s0:Service1HttpGet">
+      <http:address location="http://localhost/distribute/Service1.asmx" />
+    </port>
+    <port name="Service1HttpPost" binding="s0:Service1HttpPost">
+      <http:address location="http://localhost/distribute/Service1.asmx" />
+    </port>
+  </service>
+</definitions>

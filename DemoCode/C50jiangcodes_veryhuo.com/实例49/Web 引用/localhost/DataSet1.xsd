@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://www.tempuri.org/DataSet1.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.tempuri.org/DataSet1.xsd" id="DataSet1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="zh-CN" name="DataSet1">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="user">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="username" type="xs:string" />
+              <xs:element minOccurs="0" name="address" type="xs:string" />
+              <xs:element minOccurs="0" name="Email" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:user" />
+      <xs:field xpath="mstns:username" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
